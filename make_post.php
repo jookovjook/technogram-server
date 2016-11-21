@@ -10,6 +10,7 @@ $response['message'] = "unknown error";
 $header = $array[0];
 $title = $header["title"];
 $description = $header["description"];
+$branch = $header["branch"];
 $token = $header["token"];
 $db = new DB_Functions();
 $user_id = $db->getUserIdByToken($header['token']);
@@ -26,7 +27,7 @@ if($user_id >= 0){
                 $sub_answer = $db->transferImage($pub_image_id, $pub_image_filename);
                 //$sub_answer_ = mysql_fetch_array($sub_answer);
                 if(!$sub_answer["error"]){
-                    $sub_answer_2 = $db->makePublication($user_id, $title, $description, $sub_answer["image_id"]);
+                    $sub_answer_2 = $db->makePublication($user_id, $title, $description, $sub_answer["image_id"], $branch);
                     //echo $sub_answer_2['message'];
                     //$sub_answer_2_ = mysql_fetch_array($sub_answer_2);
                     if(!$sub_answer_2["error"]){

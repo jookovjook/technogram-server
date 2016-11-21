@@ -71,13 +71,21 @@ FROM publications
 
     public function getComments($publication_id){
         require_once 'config.php';
-        return mysql_query("SELECT users.username, publications_comments.* FROM users JOIN publications_comments
-WHERE(users.user_id = publications_comments.user_id) AND publication_id = ".$publication_id);
+        return mysql_query("SELECT users.username, images.img_link, publications_comments.* FROM users
+JOIN publications_comments ON(users.user_id = publications_comments.user_id)
+JOIN images ON(avatar_small = image_id) AND publication_id = ".$publication_id);
     }
 
     public function postComment($publication_id, $user_id, $comment){
         require_once 'config.php';
-        return mysql_query("INSERT INTO publications_comments (publication_id, user_id, comment) VALUES (".$publication_id.", ".$user_id.", '".$comment."')");
+        if(mysql_query("INSERT INTO publications_comments (publication_id, user_id, comment) VALUES (".$publication_id.", ".$user_id.", '".$comment."')")) {
+            $id = mysql_insert_id();
+            return mysql_query("SELECT users.username, images.img_link, publications_comments.* FROM users
+          JOIN publications_comments ON(users.user_id = publications_comments.user_id)
+          JOIN images ON(avatar_small = image_id) AND comment_id = " . $id);
+        }else{
+            return false;
+        }
         //return mysql_query("INSERT INTO comments (publication_id, user_id, comment) VALUES (1, 1, 'hello'");
     }
 
@@ -118,13 +126,13 @@ WHERE(users.user_id = publications_comments.user_id) AND publication_id = ".$pub
         return $response;
     }
 
-    public function makePublication($user_id, $title, $description, $image){
+    public function makePublication($user_id, $title, $description, $image, $branch){
         require_once 'config.php';
         $response = array();
         $response['error'] = true;
         $response['message'] = "error creacting new publication";
-        if(mysql_query("INSERT INTO publications (user_id, title, text, image, datetime)
-          VALUES (".$user_id.", '".$title."','".$description."',".$image.", NOW())")){
+        if(mysql_query("INSERT INTO publications (user_id, title, text, image, datetime, branch)
+          VALUES (".$user_id.", '".$title."','".$description."',".$image.", NOW(), ".$branch.")")){
             $response['error'] = false;
             $response['message'] = "success";
             $insert_id =  mysql_insert_id();
@@ -196,6 +204,39 @@ WHERE(users.user_id = publications_comments.user_id) AND publication_id = ".$pub
             mysql_query("INSERT INTO publications_stars (publication_id, user_id) VALUES (".$publication_id.", ".$user_id.")");
             return true;
         }
+    }
+
+    public function addAdvToSoft($publication_id, $license, $stage){
+        require_once 'config.php';
+        $result['error'] = true;
+        if(mysql_query("INSERT INTO pub_soft_adv (publication_id, license, stage)
+              VALUES ('$publication_id', '$license', '$stage') ")){
+            $result['error'] = false;
+        }
+        return $result;
+    }
+
+    public function addLinkToSoft($publication_id, $link, $type){
+        require_once 'config.php';
+        $result['error'] = true;
+        if(mysql_query("INSERT INTO pub_soft_links (publication_id, link, link_type)
+                  VALUES  ('$publication_id', '$link', '$type')")){
+            $result['error'] = false;
+        }
+        return $result;
+    }
+
+    public function getSoftAdv($publication_id){
+        require_once 'config.php';
+        $response['exists'] = false;
+        $result = mysql_query("SELECT * FROM pub_soft_adv WHERE publication_id = ".$publication_id);
+        $row = mysql_fetch_array($result);
+        if($row != false){
+            $response['exists'] = true;
+            $response['license'] = $row['license'];
+            $response['stage'] = $row['stage'];
+        }
+        return $response;
     }
 
 }

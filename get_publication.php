@@ -10,9 +10,11 @@ $response = array();
 if($publication_id > 0){
     $db = new DB_Functions();
     $answer = $db->getPublication($publication_id);
+    $adv = $db->getSoftAdv($publication_id);
     while($r = mysql_fetch_assoc($answer)) {
         $response[] = $r;
     }
+    $response[] = $adv;
     echo json_encode($response);
 }
 ?>

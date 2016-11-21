@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jookovjook
- * Date: 04/10/16
- * Time: 19:33
- */
 include_once 'db_functions.php';
 
 $json = file_get_contents('php://input');

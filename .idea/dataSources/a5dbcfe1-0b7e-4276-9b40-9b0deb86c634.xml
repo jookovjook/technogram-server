@@ -24,420 +24,459 @@
     <table id="19" parent="1" name="publications_comments"/>
     <table id="20" parent="1" name="software_licenses"/>
     <table id="21" parent="1" name="software_links"/>
-    <column id="22" parent="8" name="user_id">
+    <table id="22" parent="1" name="pub_soft_adv"/>
+    <table id="23" parent="1" name="pub_soft_links"/>
+    <table id="24" parent="1" name="pubs_books"/>
+    <column id="25" parent="8" name="user_id">
       <mandatory>1</mandatory>
       <data-type>int(12)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="23" parent="8" name="username">
+    <column id="26" parent="8" name="username">
       <mandatory>1</mandatory>
       <data-type>char(150)|0</data-type>
     </column>
-    <column id="24" parent="8" name="password">
+    <column id="27" parent="8" name="password">
       <mandatory>1</mandatory>
       <data-type>char(100)|0</data-type>
     </column>
-    <column id="25" parent="8" name="email">
+    <column id="28" parent="8" name="email">
       <mandatory>1</mandatory>
       <data-type>char(150)|0</data-type>
     </column>
-    <column id="26" parent="8" name="avatar_small">
+    <column id="29" parent="8" name="avatar_small">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="27" parent="8" name="avatar_large">
+    <column id="30" parent="8" name="avatar_large">
       <data-type>int(11)|0</data-type>
     </column>
-    <index id="28" parent="8" name="email">
+    <index id="31" parent="8" name="email">
       <columns>email</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="29" parent="8" name="username">
+    <index id="32" parent="8" name="username">
       <columns>username</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="30" parent="8" name="PRIMARY">
+    <key id="33" parent="8" name="PRIMARY">
       <columns>user_id</columns>
       <primary>1</primary>
     </key>
-    <key id="31" parent="8" name="username">
+    <key id="34" parent="8" name="username">
       <columns>username</columns>
       <underlying-index>username</underlying-index>
     </key>
-    <key id="32" parent="8" name="email">
+    <key id="35" parent="8" name="email">
       <columns>email</columns>
       <underlying-index>email</underlying-index>
     </key>
-    <column id="33" parent="9" name="user_id">
+    <column id="36" parent="9" name="user_id">
       <mandatory>1</mandatory>
       <data-type>int(12)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="34" parent="9" name="name">
+    <column id="37" parent="9" name="name">
       <mandatory>1</mandatory>
       <data-type>char(150)|0</data-type>
     </column>
-    <column id="35" parent="9" name="surname">
+    <column id="38" parent="9" name="surname">
       <mandatory>1</mandatory>
       <data-type>char(150)|0</data-type>
     </column>
-    <key id="36" parent="9" name="PRIMARY">
+    <key id="39" parent="9" name="PRIMARY">
       <columns>user_id</columns>
       <primary>1</primary>
     </key>
-    <foreign-key id="37" parent="9" name="user_info_ibfk_1">
+    <foreign-key id="40" parent="9" name="user_info_ibfk_1">
       <columns>user_id</columns>
       <ref-key>~.users.PRIMARY</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="38" parent="10" name="publication_id">
+    <column id="41" parent="10" name="publication_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="39" parent="10" name="user_id">
+    <column id="42" parent="10" name="user_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="40" parent="10" name="title">
+    <column id="43" parent="10" name="title">
       <data-type>char(50)|0</data-type>
     </column>
-    <column id="41" parent="10" name="text">
+    <column id="44" parent="10" name="text">
       <data-type>varchar(500)|0</data-type>
     </column>
-    <column id="42" parent="10" name="views">
-      <data-type>int(11)|0</data-type>
-      <default-expression>&apos;0&apos;</default-expression>
-    </column>
-    <column id="43" parent="10" name="stars">
-      <data-type>int(11)|0</data-type>
-      <default-expression>&apos;0&apos;</default-expression>
-    </column>
-    <column id="44" parent="10" name="image">
+    <column id="45" parent="10" name="image">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="45" parent="10" name="datetime">
+    <column id="46" parent="10" name="datetime">
       <data-type>datetime|0</data-type>
     </column>
-    <index id="46" parent="10" name="publications_publication_id_uindex">
+    <column id="47" parent="10" name="branch">
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <index id="48" parent="10" name="publications_publication_id_uindex">
       <columns>publication_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="47" parent="10" name="user_id_fk">
+    <index id="49" parent="10" name="user_id_fk">
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="48" parent="10" name="PRIMARY">
+    <key id="50" parent="10" name="PRIMARY">
       <columns>publication_id</columns>
       <primary>1</primary>
     </key>
-    <key id="49" parent="10" name="publications_publication_id_uindex">
+    <key id="51" parent="10" name="publications_publication_id_uindex">
       <columns>publication_id</columns>
       <underlying-index>publications_publication_id_uindex</underlying-index>
     </key>
-    <foreign-key id="50" parent="10" name="user_id_fk">
+    <foreign-key id="52" parent="10" name="user_id_fk">
       <columns>user_id</columns>
       <ref-key>~.users.PRIMARY</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="51" parent="11" name="image_id">
+    <column id="53" parent="11" name="image_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="52" parent="11" name="img_link">
+    <column id="54" parent="11" name="img_link">
       <data-type>char(200)|0</data-type>
     </column>
-    <index id="53" parent="11" name="images_image_id_uindex">
+    <index id="55" parent="11" name="images_image_id_uindex">
       <columns>image_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="54" parent="11" name="images_img_link_uindex">
+    <index id="56" parent="11" name="images_img_link_uindex">
       <columns>img_link</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="55" parent="11" name="PRIMARY">
+    <key id="57" parent="11" name="PRIMARY">
       <columns>image_id</columns>
       <primary>1</primary>
     </key>
-    <key id="56" parent="11" name="images_image_id_uindex">
+    <key id="58" parent="11" name="images_image_id_uindex">
       <columns>image_id</columns>
       <underlying-index>images_image_id_uindex</underlying-index>
     </key>
-    <key id="57" parent="11" name="images_img_link_uindex">
+    <key id="59" parent="11" name="images_img_link_uindex">
       <columns>img_link</columns>
       <underlying-index>images_img_link_uindex</underlying-index>
     </key>
-    <column id="58" parent="12" name="id">
+    <column id="60" parent="12" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="59" parent="12" name="publication_id">
+    <column id="61" parent="12" name="publication_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="60" parent="12" name="image_id">
+    <column id="62" parent="12" name="image_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <index id="61" parent="12" name="publication_images_id_uindex">
+    <index id="63" parent="12" name="publication_images_id_uindex">
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="62" parent="12" name="PRIMARY">
+    <key id="64" parent="12" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <key id="63" parent="12" name="publication_images_id_uindex">
+    <key id="65" parent="12" name="publication_images_id_uindex">
       <columns>id</columns>
       <underlying-index>publication_images_id_uindex</underlying-index>
     </key>
-    <column id="64" parent="13" name="temp_image_id">
+    <column id="66" parent="13" name="temp_image_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="65" parent="13" name="image_link">
+    <column id="67" parent="13" name="image_link">
       <data-type>char(200)|0</data-type>
     </column>
-    <index id="66" parent="13" name="temp_images_image_link_uindex">
+    <index id="68" parent="13" name="temp_images_image_link_uindex">
       <columns>image_link</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="67" parent="13" name="temp_images_temp_image_id_uindex">
+    <index id="69" parent="13" name="temp_images_temp_image_id_uindex">
       <columns>temp_image_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="68" parent="13" name="PRIMARY">
+    <key id="70" parent="13" name="PRIMARY">
       <columns>temp_image_id</columns>
       <primary>1</primary>
     </key>
-    <key id="69" parent="13" name="temp_images_temp_image_id_uindex">
+    <key id="71" parent="13" name="temp_images_temp_image_id_uindex">
       <columns>temp_image_id</columns>
       <underlying-index>temp_images_temp_image_id_uindex</underlying-index>
     </key>
-    <key id="70" parent="13" name="temp_images_image_link_uindex">
+    <key id="72" parent="13" name="temp_images_image_link_uindex">
       <columns>image_link</columns>
       <underlying-index>temp_images_image_link_uindex</underlying-index>
     </key>
-    <column id="71" parent="14" name="token_id">
+    <column id="73" parent="14" name="token_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="72" parent="14" name="user_id">
+    <column id="74" parent="14" name="user_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="73" parent="14" name="token">
+    <column id="75" parent="14" name="token">
       <data-type>varchar(64)|0</data-type>
     </column>
-    <index id="74" parent="14" name="tokens_token_id_uindex">
+    <index id="76" parent="14" name="tokens_token_id_uindex">
       <columns>token_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="75" parent="14" name="tokens_token_uindex">
+    <index id="77" parent="14" name="tokens_token_uindex">
       <columns>token</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="76" parent="14" name="PRIMARY">
+    <key id="78" parent="14" name="PRIMARY">
       <columns>token_id</columns>
       <primary>1</primary>
     </key>
-    <key id="77" parent="14" name="tokens_token_id_uindex">
+    <key id="79" parent="14" name="tokens_token_id_uindex">
       <columns>token_id</columns>
       <underlying-index>tokens_token_id_uindex</underlying-index>
     </key>
-    <key id="78" parent="14" name="tokens_token_uindex">
+    <key id="80" parent="14" name="tokens_token_uindex">
       <columns>token</columns>
       <underlying-index>tokens_token_uindex</underlying-index>
     </key>
-    <column id="79" parent="15" name="view_id">
+    <column id="81" parent="15" name="view_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="80" parent="15" name="publication_id">
+    <column id="82" parent="15" name="publication_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="81" parent="15" name="user_id">
+    <column id="83" parent="15" name="user_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <index id="82" parent="15" name="publications_views_view_id_uindex">
+    <index id="84" parent="15" name="publications_views_view_id_uindex">
       <columns>view_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="83" parent="15" name="PRIMARY">
+    <key id="85" parent="15" name="PRIMARY">
       <columns>view_id</columns>
       <primary>1</primary>
     </key>
-    <key id="84" parent="15" name="publications_views_view_id_uindex">
+    <key id="86" parent="15" name="publications_views_view_id_uindex">
       <columns>view_id</columns>
       <underlying-index>publications_views_view_id_uindex</underlying-index>
     </key>
-    <column id="85" parent="16" name="star_id">
+    <column id="87" parent="16" name="star_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="86" parent="16" name="publication_id">
+    <column id="88" parent="16" name="publication_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="87" parent="16" name="user_id">
+    <column id="89" parent="16" name="user_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <index id="88" parent="16" name="publications_stars_star_id_uindex">
+    <index id="90" parent="16" name="publications_stars_star_id_uindex">
       <columns>star_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="89" parent="16" name="PRIMARY">
+    <key id="91" parent="16" name="PRIMARY">
       <columns>star_id</columns>
       <primary>1</primary>
     </key>
-    <key id="90" parent="16" name="publications_stars_star_id_uindex">
+    <key id="92" parent="16" name="publications_stars_star_id_uindex">
       <columns>star_id</columns>
       <underlying-index>publications_stars_star_id_uindex</underlying-index>
     </key>
-    <column id="91" parent="17" name="branch_id">
+    <column id="93" parent="17" name="branch_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="92" parent="17" name="branch">
+    <column id="94" parent="17" name="branch">
       <data-type>varchar(50)|0</data-type>
     </column>
-    <index id="93" parent="17" name="categories_category_id_uindex">
+    <index id="95" parent="17" name="categories_category_id_uindex">
       <columns>branch_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="94" parent="17" name="PRIMARY">
+    <key id="96" parent="17" name="PRIMARY">
       <columns>branch_id</columns>
       <primary>1</primary>
     </key>
-    <key id="95" parent="17" name="categories_category_id_uindex">
+    <key id="97" parent="17" name="categories_category_id_uindex">
       <columns>branch_id</columns>
       <underlying-index>categories_category_id_uindex</underlying-index>
     </key>
-    <column id="96" parent="18" name="stage_id">
+    <column id="98" parent="18" name="stage_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="97" parent="18" name="stage">
+    <column id="99" parent="18" name="stage">
       <data-type>varchar(50)|0</data-type>
     </column>
-    <index id="98" parent="18" name="properties_property_id_uindex">
+    <index id="100" parent="18" name="properties_property_id_uindex">
       <columns>stage_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="99" parent="18" name="PRIMARY">
+    <key id="101" parent="18" name="PRIMARY">
       <columns>stage_id</columns>
       <primary>1</primary>
     </key>
-    <key id="100" parent="18" name="properties_property_id_uindex">
+    <key id="102" parent="18" name="properties_property_id_uindex">
       <columns>stage_id</columns>
       <underlying-index>properties_property_id_uindex</underlying-index>
     </key>
-    <column id="101" parent="19" name="comment_id">
+    <column id="103" parent="19" name="comment_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="102" parent="19" name="publication_id">
+    <column id="104" parent="19" name="publication_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="103" parent="19" name="user_id">
+    <column id="105" parent="19" name="user_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="104" parent="19" name="comment">
+    <column id="106" parent="19" name="comment">
       <data-type>char(150)|0</data-type>
     </column>
-    <index id="105" parent="19" name="comments_comment_id_uindex">
+    <index id="107" parent="19" name="comments_comment_id_uindex">
       <columns>comment_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="106" parent="19" name="publication_id_fk">
+    <index id="108" parent="19" name="publication_id_fk">
       <columns>publication_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="107" parent="19" name="user_id_fk_2">
+    <index id="109" parent="19" name="user_id_fk_2">
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="108" parent="19" name="PRIMARY">
+    <key id="110" parent="19" name="PRIMARY">
       <columns>comment_id</columns>
       <primary>1</primary>
     </key>
-    <key id="109" parent="19" name="comments_comment_id_uindex">
+    <key id="111" parent="19" name="comments_comment_id_uindex">
       <columns>comment_id</columns>
       <underlying-index>comments_comment_id_uindex</underlying-index>
     </key>
-    <foreign-key id="110" parent="19" name="publication_id_fk">
+    <foreign-key id="112" parent="19" name="publication_id_fk">
       <columns>publication_id</columns>
       <ref-key>~.publications.PRIMARY</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="111" parent="19" name="user_id_fk_2">
+    <foreign-key id="113" parent="19" name="user_id_fk_2">
       <columns>user_id</columns>
       <ref-key>~.users.PRIMARY</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="112" parent="20" name="license_id">
+    <column id="114" parent="20" name="license_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="113" parent="20" name="license">
+    <column id="115" parent="20" name="license">
       <data-type>varchar(20)|0</data-type>
     </column>
-    <index id="114" parent="20" name="software_licenses_license_id_uindex">
+    <index id="116" parent="20" name="software_licenses_license_id_uindex">
       <columns>license_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="115" parent="20" name="PRIMARY">
+    <key id="117" parent="20" name="PRIMARY">
       <columns>license_id</columns>
       <primary>1</primary>
     </key>
-    <key id="116" parent="20" name="software_licenses_license_id_uindex">
+    <key id="118" parent="20" name="software_licenses_license_id_uindex">
       <columns>license_id</columns>
       <underlying-index>software_licenses_license_id_uindex</underlying-index>
     </key>
-    <column id="117" parent="21" name="link_id">
+    <column id="119" parent="21" name="link_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="118" parent="21" name="link_name">
+    <column id="120" parent="21" name="link_name">
       <data-type>varchar(20)|0</data-type>
     </column>
-    <index id="119" parent="21" name="software_links_link_id_uindex">
+    <index id="121" parent="21" name="software_links_link_id_uindex">
       <columns>link_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="120" parent="21" name="PRIMARY">
+    <key id="122" parent="21" name="PRIMARY">
       <columns>link_id</columns>
       <primary>1</primary>
     </key>
-    <key id="121" parent="21" name="software_links_link_id_uindex">
+    <key id="123" parent="21" name="software_links_link_id_uindex">
       <columns>link_id</columns>
       <underlying-index>software_links_link_id_uindex</underlying-index>
     </key>
+    <column id="124" parent="22" name="publication_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="125" parent="22" name="license">
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="126" parent="22" name="stage">
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="127" parent="22" name="pub_soft_advanced_publication_id_uindex">
+      <columns>publication_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="128" parent="22" name="PRIMARY">
+      <columns>publication_id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="129" parent="22" name="pub_soft_advanced_publication_id_uindex">
+      <columns>publication_id</columns>
+      <underlying-index>pub_soft_advanced_publication_id_uindex</underlying-index>
+    </key>
+    <column id="130" parent="23" name="publication_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="131" parent="23" name="link">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="132" parent="23" name="link_type">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="133" parent="24" name="publication_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="134" parent="24" name="user_id">
+      <data-type>int(11)|0</data-type>
+    </column>
   </database-model>
 </dataSource>
