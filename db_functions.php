@@ -239,15 +239,6 @@ JOIN images ON(avatar_small = image_id) AND publication_id = ".$publication_id);
         return $response;
     }
 
-    public function getLastS(){
-        require_once 'config.php';
-        $result = mysql_query("SELECT MAX(session) AS session FROM mpu6050");
-        $row = mysql_fetch_array($result);
-        $id = $row['session'];
-        if(is_null($id)) $id = -1;
-        return $id;
-    }
-
 }
 
 ?>
