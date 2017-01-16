@@ -9,7 +9,9 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
       <secret-storage>master_key</secret-storage>
       <user-name>jook</user-name>
+      <introspection-schemas>*:ChatApp</introspection-schemas>
       <resolve-scope>ChatApp:</resolve-scope>
+      <unqualified-resolve-schemas>ChatApp:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

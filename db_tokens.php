@@ -137,6 +137,16 @@ class DB_Tokens
         return true;
     }
 
+    public function getUserIdByToken($token){
+        $user_id = -1;
+        if($this->ifTokenNotExpired($token)) {
+            $result = mysql_query("SELECT user_id FROM tokens WHERE token = '$token'");
+            $row = mysql_fetch_array($result);
+            $user_id = $row['user_id'];
+        }
+        return $user_id;
+    }
+
 }
 
 ?>

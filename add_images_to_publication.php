@@ -1,5 +1,6 @@
 <?php
 include_once 'db_functions.php';
+include_once 'db_tokens.php';
 //getting input
 $json = file_get_contents('php://input');
 $array = json_decode($json, true);
@@ -13,7 +14,8 @@ $publication_id = $header["publication_id"];
 echo $publication_id;
 $token = $header["token"];
 $db = new DB_Functions();
-$user_id = $db->getUserIdByToken($header['token']);
+$dbt = new DB_Tokens();
+$user_id = $dbt->getUserIdByToken($header['token']);
 if($user_id >= 0){
     if($db->ifUserOwnsPublication($user_id, $publication_id)) {
         $count = 0;

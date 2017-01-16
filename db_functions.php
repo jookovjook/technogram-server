@@ -20,6 +20,10 @@ FROM publications
     ON (V.publication_id = publications.publication_id)
   JOIN (SELECT publication_id, COUNT(*) AS stars FROM publications_stars GROUP BY publication_id) AS S
     ON (S.publication_id = publications.publication_id)";
+    private $order = " ORDER BY datetime DESC, publication_id DESC";
+    private $strict = " LIMIT 10";
+    private $id_strict = " WHERE publications.publication_id < ";
+    private $id_strict_user = " AND publications.publication_id < ";
     private $target_path = "uploads/";
     private $images_directory = "image_resources/";
 
@@ -51,16 +55,38 @@ FROM publications
                   WHERE (users.user_id = user_info.user_id) AND (user_info.user_id = '$user_id')");
     }
 
+    public function getUserAddInfo($user_id){
+        return mysql_query("SELECT users.username, user_info.name, user_info.surname, user_info.about, img_link FROM user_info
+                  JOIN users ON(users.user_id = user_info.user_id)
+                  JOIN images ON(users.avatar_small = image_id)
+                  WHERE (users.user_id = user_info.user_id) AND (user_info.user_id = '$user_id')");
+    }
+
     public function getUserPublications($user_id)
     {
         require_once 'config.php';
-        return mysql_query($this->get_pubs." WHERE publications.user_id = ".$user_id);
+        return mysql_query($this->get_pubs." WHERE publications.user_id = ".$user_id.$this->order.$this->strict);
+    }
+
+    public function getUserPubsId($user_id, $last_id){
+        return mysql_query($this->get_pubs." WHERE publications.user_id = ".$user_id.$this->id_strict_user.$last_id.$this->order.$this->strict);
     }
 
     public function getAllPublications()
     {
         require_once 'config.php';
-        return mysql_query($this->get_pubs);
+        return mysql_query($this->get_pubs.$this->order.$this->strict);
+    }
+
+    public function getAllPubsId($pub_id){
+        return mysql_query($this->get_pubs.$this->id_strict.$pub_id.$this->order.$this->strict);
+    }
+
+    public function getDateOfPub($pub_id){
+        $result = mysql_query("SELECT datetime FROM publications WHERE publication_id = $pub_id");
+        $row = mysql_fetch_array($result);
+        $datetime = $row['datetime'];
+        return $datetime;
     }
 
     public function getPublication($publication_id)
@@ -88,6 +114,8 @@ JOIN images ON(avatar_small = image_id) AND publication_id = ".$publication_id);
         }
         //return mysql_query("INSERT INTO comments (publication_id, user_id, comment) VALUES (1, 1, 'hello'");
     }
+
+
 
     public function getPublicationImages($publication_id){
         require_once 'config.php';

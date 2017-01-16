@@ -1,5 +1,6 @@
 <?php
 include_once 'db_functions.php';
+include_once 'db_tokens.php';
 //getting input
 $json = file_get_contents('php://input');
 $array = json_decode($json, true);
@@ -13,7 +14,8 @@ $description = $header["description"];
 $branch = $header["branch"];
 $token = $header["token"];
 $db = new DB_Functions();
-$user_id = $db->getUserIdByToken($header['token']);
+$dbt = new DB_Tokens();
+$user_id = $dbt->getUserIdByToken($header['token']);
 $pub_image = $array[1];
 if($user_id >= 0){
     if(!empty($title) && !empty($description) ) {

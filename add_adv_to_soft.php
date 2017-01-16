@@ -1,5 +1,6 @@
 <?php
 include_once 'db_functions.php';
+
 //getting input
 $json = file_get_contents('php://input');
 $array = json_decode($json, true);
