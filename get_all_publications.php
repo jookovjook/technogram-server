@@ -6,7 +6,6 @@ $obj = json_decode($json, true);
 $last_id = $obj['last_id'];
 
 $response = array();
-
 $db = new DB_Functions();
 
 #echo $last_id;
@@ -18,6 +17,7 @@ if($last_id > 0) {
     $answer = $db->getAllPublications();
 }
 while ($r = mysql_fetch_assoc($answer)) {
+
     $response[] = $r;
 }
 echo json_encode($response);

@@ -55,6 +55,14 @@ FROM publications
                   WHERE (users.user_id = user_info.user_id) AND (user_info.user_id = '$user_id')");
     }
 
+    public function getOwnInfo($user_id){
+        require_once 'config.php';
+        return mysql_query("SELECT users.email, users.username, user_info.name, user_info.surname, img_link, user_info.about FROM user_info
+                  JOIN users ON(users.user_id = user_info.user_id)
+                  JOIN images ON(users.avatar_small = image_id)
+                  WHERE (users.user_id = user_info.user_id) AND (user_info.user_id = '$user_id')");
+    }
+
     public function getUserAddInfo($user_id){
         return mysql_query("SELECT users.username, user_info.name, user_info.surname, user_info.about, img_link FROM user_info
                   JOIN users ON(users.user_id = user_info.user_id)
@@ -159,8 +167,8 @@ JOIN images ON(avatar_small = image_id) AND publication_id = ".$publication_id);
         $response = array();
         $response['error'] = true;
         $response['message'] = "error creacting new publication";
-        if(mysql_query("INSERT INTO publications (user_id, title, text, image, datetime, branch)
-          VALUES (".$user_id.", '".$title."','".$description."',".$image.", NOW(), ".$branch.")")){
+        if(mysql_query("INSERT INTO publications (user_id, title, text, image, datetime)
+          VALUES (".$user_id.", '".$title."','".$description."',".$image.", NOW() )")){
             $response['error'] = false;
             $response['message'] = "success";
             $insert_id =  mysql_insert_id();
@@ -267,6 +275,73 @@ JOIN images ON(avatar_small = image_id) AND publication_id = ".$publication_id);
         return $response;
     }
 
-}
+    public function register($username, $password, $email){
+        require_once 'config.php';
+        $result['error'] = true;
+        $result['ins_usr'] = false;
+        if(mysql_query("INSERT INTO users (username, password, email)
+              VALUES ('$username', '$password', '$email') ")){
+            $result['ins_usr'] = true;
+            $id = mysql_insert_id();
+            if(mysql_query("INSERT INTO user_info (user_id) VALUES ('$id')")){
+                $result['error'] = false;
+                $result['user_id'] = $id;
+            }
+        }
+        return $result;
+    }
 
-?>
+    public function updateUserInfo($user_id, $name, $surname, $about){
+        mysql_query("UPDATE user_info SET name='$name', surname='$surname', $about='$about' WHERE user_id=".$user_id);
+    }
+
+    public function updateName($user_id, $name){
+        mysql_query("UPDATE user_info SET name='$name' WHERE user_id=".$user_id);
+    }
+
+    public function updateSurname($user_id, $surname){
+        mysql_query("UPDATE user_info SET surname = '$surname' WHERE user_id=".$user_id);
+    }
+
+    public function updateAbout($user_id, $about){
+        mysql_query("UPDATE user_info SET about = '$about'  WHERE user_id=".$user_id);
+    }
+
+    public function updateUsername($user_id, $username){
+        if(mysql_query("UPDATE users SET username='$username' WHERE user_id = ".$user_id)){
+            return true;
+        }
+        return false;
+    }
+
+    public function updatePassword($user_id, $curr_pass, $password){
+        include_once 'db_tokens.php';
+        $dbt = new DB_Tokens();
+        if($dbt->ifPasswordById($user_id, $curr_pass)){
+            mysql_query("UPDATE users SET password = '$password'  WHERE user_id = ".$user_id);
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function updateEmail($user_id, $email){
+        if(mysql_query("UPDATE users SET email = '$email' WHERE user_id = ".$user_id)){
+            return true;
+        }
+        return false;
+    }
+
+    public function getImageByLink($img_link){
+        require_once 'config.php';
+        $result = mysql_query("SELECT image_id FROM images WHERE img_link = '$img_link'");
+        $row = mysql_fetch_array($result);
+        $image_id = $row['image_id'];
+        if(is_null($image_id)) $image_id = -1;
+        return $image_id;
+    }
+
+    public function setProfileImage($user_id, $image_id){
+        mysql_query("UPDATE users SET avatar_small = '$image_id' WHERE user_id=".$user_id);
+    }
+}

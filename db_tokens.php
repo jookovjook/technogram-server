@@ -100,6 +100,24 @@ class DB_Tokens
         }
     }
 
+    public function ifUserExistsById($user_id){
+        $result =mysql_query("SELECT 1 FROM users WHERE user_id = ".$user_id);
+        if ($result && mysql_num_rows($result) > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function ifEmailExists($email){
+        $result =mysql_query("SELECT 1 FROM users WHERE email = '$email'");
+        if ($result && mysql_num_rows($result) > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public function ifUserNotExists($username){
         return $this->reverse($this->ifUserExists($username));
     }
@@ -126,6 +144,17 @@ class DB_Tokens
         return false;
     }
 
+    public function ifPasswordById($user_id, $password){
+        if($this->ifUserExistsById($user_id)){
+            $result = mysql_query("SELECT password FROM users WHERE user_id = $user_id");
+            $row = mysql_fetch_array($result);
+            if($row['password'] == $password){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public function ifNotPassword($username, $password){
         return $this->reverse($this->ifPassword($username, $password));
     }
@@ -141,6 +170,26 @@ class DB_Tokens
         $user_id = -1;
         if($this->ifTokenNotExpired($token)) {
             $result = mysql_query("SELECT user_id FROM tokens WHERE token = '$token'");
+            $row = mysql_fetch_array($result);
+            $user_id = $row['user_id'];
+        }
+        return $user_id;
+    }
+
+    public function getUserIdByUsername($username){
+        $user_id = -1;
+        if($this->ifUserExists($username)) {
+            $result = mysql_query("SELECT user_id FROM users WHERE username = '$username'");
+            $row = mysql_fetch_array($result);
+            $user_id = $row['user_id'];
+        }
+        return $user_id;
+    }
+
+    public function getUserIdByEmail($email){
+        $user_id = -1;
+        if($this->ifEmailExists($email)) {
+            $result = mysql_query("SELECT user_id FROM users WHERE email = '$email'");
             $row = mysql_fetch_array($result);
             $user_id = $row['user_id'];
         }
