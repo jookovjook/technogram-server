@@ -1,4 +1,4 @@
-![Technogram: A new social network for IT specialists](https://raw.githubusercontent.com/jookovjook/technogram-andoid/master/Art.png)
+![Technogram: A new social network for IT specialists](https://raw.githubusercontent.com/jookovjook/technogram-android/master/Art.png)
 
 TechnoGram is a new social network for IT specialists. This repo provides Android part of the service.
 
@@ -7,7 +7,7 @@ TechnoGram is a new social network for IT specialists. This repo provides Androi
 - [Requirements](#requirements)
 - [Communication](#communication)
 - [Installation](#installation)
-- [Overview](https://github.com/jookovjook/technogram-andoid#overview)
+- [Overview](https://github.com/jookovjook/technogram-android#overview)
 - [Credits](#credits)
 - [Donations](#donations)
 - [License](#license)
@@ -80,11 +80,11 @@ Clone [technogram-android](https://github.com/jookovjook/technogram-android) res
 $ git clone https://github.com/jookovjook/technogram-android
 ```
 
-Follow instruction for [installation](https://github.com/jookovjook/technogram-andoid#android-studio) of Android app.
+Follow instruction for [installation](https://github.com/jookovjook/technogram-android#android-studio) of Android app.
 
 ## Overview
 
-[Overview](https://github.com/jookovjook/technogram-andoid#overview)
+[Overview](https://github.com/jookovjook/technogram-android#overview)
 
 ## Credits
 
