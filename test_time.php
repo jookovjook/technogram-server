@@ -12,7 +12,7 @@ echo "hi 2";
 echo "\r\n";
 
 $db = new DB_Tokens();
-$auth =  $db->authentificate('jookovjook', '47530213');
+$auth =  $db->authentificate('jookovjook', '12345678');
 
 if($auth == false){
     echo "wrong password";

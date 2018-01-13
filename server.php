@@ -1,7 +1,7 @@
 <?php
 $dsn      = 'mysql:dbname=chatapp;host=localhost';
 $username = 'jook';
-$password = '47530213';
+$password = '12345678';
 
 error_reporting(E_ERROR);
 

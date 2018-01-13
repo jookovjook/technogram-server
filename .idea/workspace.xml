@@ -2,84 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e8a081-5549-40f2-8b45-0b5971ef1d3e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/check.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/createNusers.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/createPubsForUsers.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/createVewsLikesComments.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/db_get_pubs.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/get_all_publications_test.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/get_all_pubs_boost.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/like_pub.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/stress_test.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/chatApp.iml" afterPath="$PROJECT_DIR$/.idea/chatApp.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/add_images_to_publication.php" afterPath="$PROJECT_DIR$/add_images_to_publication.php" />
-      <change beforePath="$PROJECT_DIR$/auth.php" afterPath="$PROJECT_DIR$/auth.php" />
-      <change beforePath="$PROJECT_DIR$/chatapp/add_adv_to_soft.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/add_images_to_publication.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/add_links_to_soft.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/auth.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/authorize.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/check.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/check_token.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/config.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/db_connect.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/db_functions.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/db_tokens.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/fileUpload.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_adv_soft.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_all_publications.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_comments.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_own_info.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_publication.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_publication_images.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_user_add_info.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_user_avatar_small.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_user_info.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/get_user_publications.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/login_check.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/make_post.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/post_comment.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/register.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/resource.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/server.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/show_info.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/test_time.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/token.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/update_profile.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/chatapp/update_profile_image.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/check_token.php" afterPath="$PROJECT_DIR$/check_token.php" />
       <change beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change beforePath="$PROJECT_DIR$/db_connect.php" afterPath="$PROJECT_DIR$/db_connect.php" />
-      <change beforePath="$PROJECT_DIR$/db_functions.php" afterPath="$PROJECT_DIR$/db_functions.php" />
-      <change beforePath="$PROJECT_DIR$/db_tokens.php" afterPath="$PROJECT_DIR$/db_tokens.php" />
-      <change beforePath="$PROJECT_DIR$/fileUpload.php" afterPath="$PROJECT_DIR$/fileUpload.php" />
-      <change beforePath="$PROJECT_DIR$/get_adv_soft.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/get_all_publications.php" afterPath="$PROJECT_DIR$/get_all_publications.php" />
-      <change beforePath="$PROJECT_DIR$/get_comments.php" afterPath="$PROJECT_DIR$/get_comments.php" />
-      <change beforePath="$PROJECT_DIR$/get_own_info.php" afterPath="$PROJECT_DIR$/get_own_info.php" />
-      <change beforePath="$PROJECT_DIR$/get_publication.php" afterPath="$PROJECT_DIR$/get_publication.php" />
-      <change beforePath="$PROJECT_DIR$/get_publication_images.php" afterPath="$PROJECT_DIR$/get_publication_images.php" />
-      <change beforePath="$PROJECT_DIR$/get_user_add_info.php" afterPath="$PROJECT_DIR$/get_user_add_info.php" />
-      <change beforePath="$PROJECT_DIR$/get_user_avatar_small.php" afterPath="$PROJECT_DIR$/get_user_avatar_small.php" />
-      <change beforePath="$PROJECT_DIR$/get_user_info.php" afterPath="$PROJECT_DIR$/get_user_info.php" />
-      <change beforePath="$PROJECT_DIR$/get_user_publications.php" afterPath="$PROJECT_DIR$/get_user_pubs.php" />
-      <change beforePath="$PROJECT_DIR$/login_check.php" afterPath="$PROJECT_DIR$/login_check.php" />
-      <change beforePath="$PROJECT_DIR$/make_post.php" afterPath="$PROJECT_DIR$/make_post.php" />
-      <change beforePath="$PROJECT_DIR$/post_comment.php" afterPath="$PROJECT_DIR$/post_comment.php" />
-      <change beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
-      <change beforePath="$PROJECT_DIR$/resource.php" afterPath="$PROJECT_DIR$/resource.php" />
       <change beforePath="$PROJECT_DIR$/server.php" afterPath="$PROJECT_DIR$/server.php" />
-      <change beforePath="$PROJECT_DIR$/show_info.php" afterPath="$PROJECT_DIR$/show_info.php" />
-      <change beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change beforePath="$PROJECT_DIR$/test_time.php" afterPath="$PROJECT_DIR$/test_time.php" />
-      <change beforePath="$PROJECT_DIR$/token.php" afterPath="$PROJECT_DIR$/token.php" />
-      <change beforePath="$PROJECT_DIR$/update_profile.php" afterPath="$PROJECT_DIR$/update_profile.php" />
-      <change beforePath="$PROJECT_DIR$/update_profile_image.php" afterPath="$PROJECT_DIR$/update_profile_image.php" />
     </list>
     <ignored path="chatApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,12 +59,12 @@
     <favorites_list name="chatApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="db_functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db_functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="151" column="77" lean-forward="true" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
+            <state relative-caret-position="2235">
+              <caret line="151" column="77" lean-forward="false" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
               <folding>
                 <marker date="1515851244553" expanded="true" signature="123:1184" ph="SELECT publi... publications" />
                 <marker date="1515851244553" expanded="true" signature="332:558" ph="SELECT publi... publications" />
@@ -244,11 +169,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publications" pinned="false" current-in-tab="true">
+      <file leaf-file-name="publications" pinned="false" current-in-tab="false">
         <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.publications">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="e#6#43#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -287,7 +224,11 @@
       <find>upda</find>
       <find>token</find>
       <find>user_info</find>
+      <find>47530213</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -311,7 +252,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/console.sql" />
         <option value="$PROJECT_DIR$/db_connect.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9fc7871c-b508-494e-8833-1de5f4e5b7ba/console.sql" />
-        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/db_tokens.php" />
         <option value="$PROJECT_DIR$/add_images_to_publication.php" />
         <option value="$PROJECT_DIR$/auth.php" />
@@ -346,6 +286,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/console.sql" />
         <option value="$PROJECT_DIR$/get_comments.php" />
         <option value="$PROJECT_DIR$/db_functions.php" />
+        <option value="$PROJECT_DIR$/config.php" />
       </list>
     </option>
   </component>
@@ -381,7 +322,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -393,7 +334,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,11 +558,12 @@
       <workItem from="1515404923063" duration="5000" />
       <workItem from="1515770499820" duration="3589000" />
       <workItem from="1515839269760" duration="5183000" />
+      <workItem from="1515872053247" duration="64000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301346000" />
+    <option name="totallyTimeSpent" value="301410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -636,17 +578,16 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13948497" sideWeight="0.48134327" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24279836" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33607522" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784638" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45090908" sideWeight="0.49427754" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0014306152" sideWeight="0.48134327" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33607522" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22889842" sideWeight="0.48010975" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35301206" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784638" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18097281" sideWeight="0.51865673" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -655,6 +596,7 @@
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Runtime Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45090908" sideWeight="0.49427754" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -689,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,17 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#6#43#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -976,7 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="119" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="88" lean-forward="false" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,21 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-          <folding>
-            <marker date="1515850052934" expanded="true" signature="2103:2161" ph="SELECT user_... tokens" />
-            <marker date="1515850052934" expanded="true" signature="2649:2725" ph="SELECT * FRO... publications" />
-            <marker date="1515850052934" expanded="true" signature="2824:2944" ph="SELECT * FRO... publications" />
-            <marker date="1515850052934" expanded="true" signature="3043:3140" ph="SELECT * FRO... publications" />
-            <marker date="1515850052934" expanded="true" signature="3255:3394" ph="SELECT * FRO... publications" />
-            <marker date="1515850052934" expanded="true" signature="3489:3600" ph="SELECT COUNT... publications_comments" />
-            <marker date="1515850052934" expanded="true" signature="3696:3753" ph="SELECT usern... users" />
-            <marker date="1515850052934" expanded="true" signature="3857:3902" ph="SELECT img_l... images" />
-            <marker date="1515850052934" expanded="true" signature="4003:4109" ph="SELECT COUNT... publications_views" />
-            <marker date="1515850052934" expanded="true" signature="4201:4283" ph="SELECT COUNT... pubs_likes" />
-            <marker date="1515850052934" expanded="true" signature="4377:4462" ph="SELECT COUNT... pubs_x2_likes" />
-            <marker date="1515850052934" expanded="true" signature="4568:4634" ph="SELECT 1 FRO... pubs_likes" />
-            <marker date="1515850052934" expanded="true" signature="4881:4950" ph="SELECT 1 FRO... pubs_x2_likes" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,14 +969,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db_functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="151" column="77" lean-forward="true" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
+        <state relative-caret-position="2235">
+          <caret line="151" column="77" lean-forward="false" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
           <folding>
             <marker date="1515851244553" expanded="true" signature="123:1184" ph="SELECT publi... publications" />
             <marker date="1515851244553" expanded="true" signature="332:558" ph="SELECT publi... publications" />
@@ -1189,6 +1077,16 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#43#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
