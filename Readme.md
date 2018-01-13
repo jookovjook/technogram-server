@@ -70,8 +70,6 @@ define("DB_PASSWORD", 'password');
 define("DB_DATABASE", 'database');
 ```
 
-Use the installation guide at [technogram-server](https://github.com/jookovjook/technogram-server) repository.
-
 ### Android Studio
 
 Clone [technogram-android](https://github.com/jookovjook/technogram-android) respository 
