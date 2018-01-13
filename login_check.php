@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ERROR);
 /**
  * Features:
  */
@@ -24,7 +24,7 @@ if ($username == null || $password == null){
 } else {
     $db = new DB_Functions();
     $answer = $db->getUser($username);
-    $row = mysql_fetch_array($answer);
+    $row = mysqli_fetch_array($answer);
     $count = count($row);
     if ($count == 4 ){
         if($password == $row['password']) {
@@ -46,5 +46,3 @@ if ($username == null || $password == null){
     }
 
 }
-
-?>

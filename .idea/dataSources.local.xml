@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="MySQL - ChatApp@localhost" uuid="a5dbcfe1-0b7e-4276-9b40-9b0deb86c634">
-      <database-info product="MySQL" version="5.7.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <database-info product="MySQL" version="5.7.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
@@ -12,6 +12,36 @@
       <introspection-schemas>*:ChatApp</introspection-schemas>
       <resolve-scope>ChatApp:</resolve-scope>
       <unqualified-resolve-schemas>ChatApp:</unqualified-resolve-schemas>
+    </data-source>
+    <data-source name="trades@localhost" uuid="415eed10-93c7-4fd3-ad97-a48a0b6ffb1a">
+      <database-info product="MySQL" version="5.7.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>jook</user-name>
+      <introspection-schemas>*:trades</introspection-schemas>
+    </data-source>
+    <data-source name="chatapp@localhost" uuid="9fc7871c-b508-494e-8833-1de5f4e5b7ba">
+      <database-info product="MySQL" version="5.7.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>jook</user-name>
+      <introspection-schemas>*:chatapp</introspection-schemas>
+    </data-source>
+    <data-source name="ChatApp@localhost" uuid="7e7d12e1-0a11-4240-b859-9b2cf964b6d2">
+      <database-info product="MySQL" version="5.7.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>jook</user-name>
+      <introspection-schemas>*:chatapp</introspection-schemas>
     </data-source>
   </component>
 </project>

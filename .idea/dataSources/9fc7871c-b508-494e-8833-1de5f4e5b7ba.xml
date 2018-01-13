@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="MySQL - ChatApp@localhost">
+<dataSource name="chatapp@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
     <root id="1">
       <DefaultCasing>mixed/mixed</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="chatapp">
       <Current>1</Current>
+      <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="information_schema">
@@ -914,5 +915,523 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
+    <table id="231" parent="2" name="images">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="232" parent="2" name="product_stages">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="233" parent="2" name="pub_soft_adv">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="234" parent="2" name="pub_soft_links">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="235" parent="2" name="publication_images">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="236" parent="2" name="publications">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="237" parent="2" name="publications_comments">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="238" parent="2" name="publications_views">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="239" parent="2" name="pubs_likes">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="240" parent="2" name="pubs_x2_likes">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="241" parent="2" name="temp_images">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="242" parent="2" name="tokens">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="243" parent="2" name="users">
+      <Engine>InnoDB</Engine>
+    </table>
+    <column id="244" parent="231" name="image_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="245" parent="231" name="img_link">
+      <Position>2</Position>
+      <DataType>char(200)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="246" parent="231" name="images_image_id_uindex">
+      <ColNames>image_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="247" parent="231" name="images_img_link_uindex">
+      <ColNames>img_link</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="248" parent="231" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>image_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="249" parent="231" name="images_image_id_uindex">
+      <ColNames>image_id</ColNames>
+      <UnderlyingIndexName>images_image_id_uindex</UnderlyingIndexName>
+    </key>
+    <key id="250" parent="231" name="images_img_link_uindex">
+      <ColNames>img_link</ColNames>
+      <UnderlyingIndexName>images_img_link_uindex</UnderlyingIndexName>
+    </key>
+    <column id="251" parent="232" name="stage_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="252" parent="232" name="stage">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="253" parent="232" name="properties_property_id_uindex">
+      <ColNames>stage_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="254" parent="232" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>stage_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="255" parent="232" name="properties_property_id_uindex">
+      <ColNames>stage_id</ColNames>
+      <UnderlyingIndexName>properties_property_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="256" parent="233" name="publication_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="233" name="license">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="258" parent="233" name="stage">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="259" parent="233" name="pub_soft_advanced_publication_id_uindex">
+      <ColNames>publication_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="260" parent="233" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>publication_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="261" parent="233" name="pub_soft_advanced_publication_id_uindex">
+      <ColNames>publication_id</ColNames>
+      <UnderlyingIndexName>pub_soft_advanced_publication_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="262" parent="234" name="publication_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="263" parent="234" name="link">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="234" name="link_type">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="235" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="266" parent="235" name="publication_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="235" name="image_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="268" parent="235" name="publication_images_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="269" parent="235" name="publication_images_pub_id_index">
+      <ColNames>publication_id</ColNames>
+    </index>
+    <index id="270" parent="235" name="publication_images_image_id_index">
+      <ColNames>image_id</ColNames>
+    </index>
+    <key id="271" parent="235" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="272" parent="235" name="publication_images_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>publication_images_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="273" parent="236" name="publication_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="274" parent="236" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="275" parent="236" name="title">
+      <Position>3</Position>
+      <DataType>char(50)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="276" parent="236" name="text">
+      <Position>4</Position>
+      <DataType>varchar(500)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="277" parent="236" name="image">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="236" name="datetime">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="279" parent="236" name="branch">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="280" parent="236" name="publications_publication_id_uindex">
+      <ColNames>publication_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="281" parent="236" name="user_id_fk">
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="282" parent="236" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>publication_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="283" parent="236" name="publications_publication_id_uindex">
+      <ColNames>publication_id</ColNames>
+      <UnderlyingIndexName>publications_publication_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="284" parent="237" name="comment_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="285" parent="237" name="publication_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="237" name="user_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="237" name="comment">
+      <Position>4</Position>
+      <DataType>char(150)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="288" parent="237" name="comments_comment_id_uindex">
+      <ColNames>comment_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="289" parent="237" name="publication_id_fk">
+      <ColNames>publication_id</ColNames>
+    </index>
+    <index id="290" parent="237" name="user_id_fk_2">
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="291" parent="237" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>comment_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="292" parent="237" name="comments_comment_id_uindex">
+      <ColNames>comment_id</ColNames>
+      <UnderlyingIndexName>comments_comment_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="293" parent="238" name="view_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="238" name="publication_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="295" parent="238" name="user_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="296" parent="238" name="publications_views_view_id_uindex">
+      <ColNames>view_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="297" parent="238" name="publications_views_view_id_index">
+      <ColNames>view_id</ColNames>
+    </index>
+    <index id="298" parent="238" name="publications_id__index">
+      <ColNames>publication_id</ColNames>
+    </index>
+    <key id="299" parent="238" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>view_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="300" parent="238" name="publications_views_view_id_uindex">
+      <ColNames>view_id</ColNames>
+      <UnderlyingIndexName>publications_views_view_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="301" parent="239" name="like_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="239" name="pub_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="239" name="user_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="304" parent="239" name="publications_stars_star_id_uindex">
+      <ColNames>like_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="305" parent="239" name="pubs_likes_pub_id_index">
+      <ColNames>pub_id</ColNames>
+    </index>
+    <index id="306" parent="239" name="pubs_likes_user_id_index">
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="307" parent="239" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>like_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="308" parent="239" name="publications_stars_star_id_uindex">
+      <ColNames>like_id</ColNames>
+      <UnderlyingIndexName>publications_stars_star_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="309" parent="240" name="pub_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="310" parent="240" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;-1&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="311" parent="240" name="like_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="312" parent="240" name="pubs_x2_likes_x2_like_id_uindex">
+      <ColNames>like_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="313" parent="240" name="pubs_x2_likes_pub_id_index">
+      <ColNames>pub_id</ColNames>
+    </index>
+    <index id="314" parent="240" name="pubs_x2_likes_user_id_index">
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="315" parent="240" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>like_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="316" parent="240" name="pubs_x2_likes_x2_like_id_uindex">
+      <ColNames>like_id</ColNames>
+      <UnderlyingIndexName>pubs_x2_likes_x2_like_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="317" parent="241" name="temp_image_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="318" parent="241" name="image_link">
+      <Position>2</Position>
+      <DataType>char(200)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="319" parent="241" name="temp_images_temp_image_id_uindex">
+      <ColNames>temp_image_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="320" parent="241" name="temp_images_image_link_uindex">
+      <ColNames>image_link</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="321" parent="241" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>temp_image_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="322" parent="241" name="temp_images_temp_image_id_uindex">
+      <ColNames>temp_image_id</ColNames>
+      <UnderlyingIndexName>temp_images_temp_image_id_uindex</UnderlyingIndexName>
+    </key>
+    <key id="323" parent="241" name="temp_images_image_link_uindex">
+      <ColNames>image_link</ColNames>
+      <UnderlyingIndexName>temp_images_image_link_uindex</UnderlyingIndexName>
+    </key>
+    <column id="324" parent="242" name="token_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="325" parent="242" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="326" parent="242" name="token">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="327" parent="242" name="expires">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="328" parent="242" name="tokens_token_id_uindex">
+      <ColNames>token_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="329" parent="242" name="tokens_token_uindex">
+      <ColNames>token</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="330" parent="242" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>token_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="331" parent="242" name="tokens_token_id_uindex">
+      <ColNames>token_id</ColNames>
+      <UnderlyingIndexName>tokens_token_id_uindex</UnderlyingIndexName>
+    </key>
+    <key id="332" parent="242" name="tokens_token_uindex">
+      <ColNames>token</ColNames>
+      <UnderlyingIndexName>tokens_token_uindex</UnderlyingIndexName>
+    </key>
+    <column id="333" parent="243" name="user_id">
+      <Position>1</Position>
+      <DataType>int(12)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="334" parent="243" name="username">
+      <Position>2</Position>
+      <DataType>char(150)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="335" parent="243" name="password">
+      <Position>3</Position>
+      <DataType>char(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="336" parent="243" name="email">
+      <Position>4</Position>
+      <DataType>char(150)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="243" name="avatar_small">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;5212587&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="338" parent="243" name="avatar_large">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;5212587&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="339" parent="243" name="username">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="340" parent="243" name="email">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="341" parent="243" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>user_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="342" parent="243" name="username">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>username</UnderlyingIndexName>
+    </key>
+    <key id="343" parent="243" name="email">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>email</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>

@@ -1,6 +1,7 @@
 <?php
 include_once 'db_functions.php';
 include_once 'db_tokens.php';
+error_reporting(E_ERROR);
 //getting input
 $json = file_get_contents('php://input');
 $array = json_decode($json, true);
@@ -26,7 +27,7 @@ if($user_id >= 0){
                 $pub_image_id = $pub_image["_id"];
                 $pub_image_filename = $pub_image["filename"];
                 $answer = $db->getTempImageLink($pub_image_id);
-                $answer_ = mysql_fetch_array($answer);
+                $answer_ = mysqli_fetch_array($answer);
                 if ($answer_["image_link"] == $pub_image_filename) {
                     $db = new DB_Functions();
                     $sub_answer = $db->transferImage($pub_image_id, $pub_image_filename);
@@ -58,4 +59,3 @@ if($user_id >= 0){
 //echo $user_id;
 $response['count'] = $count;
 echo json_encode($response);
-?>

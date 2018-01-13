@@ -1,6 +1,6 @@
 <?php
 include_once 'db_functions.php';
-
+error_reporting(E_ERROR);
 // Path to move uploaded files
 $target_path = "uploads/";
 $images_directory = "image_resources/";
@@ -84,4 +84,3 @@ if($user_id >= 0) {
 }
 // Echo final json response to client
 echo json_encode($response);
-?>

@@ -1,6 +1,9 @@
 <?php
 include_once 'db_functions.php';
 include "db_tokens.php";
+
+error_reporting(E_ERROR);
+
 $json = file_get_contents('php://input');
 $obj = json_decode($json, true);
 $username = $obj['username'];
@@ -24,7 +27,7 @@ if($exists){
     }else{
         $db = new DB_Functions();
         $result = $db->register($username, $password, $email);
-        $error = $result['errod'];
+        $error = $result['error'];
         if($error){
             $response['error'] = 3;
             $response['message'] = 'Unknown error 3';

@@ -1,12 +1,12 @@
 <?php
 date_default_timezone_set('Europe/Moscow');
 include_once 'db_tokens.php';
-
+error_reporting(E_ERROR);
 $date = new DateTime();
 echo $date->getTimestamp();
 
 echo "hi 1";
-return;
+//return;
 echo "hi 2";
 
 echo "\r\n";
@@ -19,5 +19,3 @@ if($auth == false){
 }else{
     echo $auth;
 }
-
-?>

@@ -1,7 +1,7 @@
 <?php
 include_once 'db_functions.php';
 include_once 'db_tokens.php';
-
+error_reporting(E_ERROR);
 $json = file_get_contents('php://input');
 $obj = json_decode($json, true);
 $token = $obj['token'];
@@ -13,7 +13,7 @@ $user_id = $dbt->getUserIdByToken($token);
 if($user_id >= 0){
     $db = new DB_Functions();
     $answer = $db->getOwnInfo($user_id);
-    $row = mysql_fetch_array($answer);
+    $row = mysqli_fetch_array($answer);
     $response['error_code'] = 0;
     $response['username'] = $row['username'];
     $response['name'] = $row['name'];

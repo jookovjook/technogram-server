@@ -2,20 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e8a081-5549-40f2-8b45-0b5971ef1d3e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/update_profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/update_profile_image.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_adv_to_soft.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_links_to_soft.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/authorize.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth.php" afterPath="$PROJECT_DIR$/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_functions.php" afterPath="$PROJECT_DIR$/db_functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_tokens.php" afterPath="$PROJECT_DIR$/db_tokens.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get_all_publications.php" afterPath="$PROJECT_DIR$/get_all_publications.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/get_own_info.php" afterPath="$PROJECT_DIR$/get_own_info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/check.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/createNusers.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/createPubsForUsers.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/createVewsLikesComments.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db_get_pubs.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/get_all_publications_test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/get_all_pubs_boost.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/like_pub.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/stress_test.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/chatApp.iml" afterPath="$PROJECT_DIR$/.idea/chatApp.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/add_images_to_publication.php" afterPath="$PROJECT_DIR$/add_images_to_publication.php" />
+      <change beforePath="$PROJECT_DIR$/auth.php" afterPath="$PROJECT_DIR$/auth.php" />
+      <change beforePath="$PROJECT_DIR$/chatapp/add_adv_to_soft.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/add_images_to_publication.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/add_links_to_soft.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/auth.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/authorize.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/check.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/check_token.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/db_connect.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/db_functions.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/db_tokens.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/fileUpload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_adv_soft.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_all_publications.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_comments.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_own_info.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_publication.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_publication_images.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_user_add_info.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_user_avatar_small.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_user_info.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/get_user_publications.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/login_check.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/make_post.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/post_comment.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/register.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/resource.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/server.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/show_info.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/test.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/test_time.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/token.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/update_profile.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/chatapp/update_profile_image.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/check_token.php" afterPath="$PROJECT_DIR$/check_token.php" />
+      <change beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
+      <change beforePath="$PROJECT_DIR$/db_connect.php" afterPath="$PROJECT_DIR$/db_connect.php" />
+      <change beforePath="$PROJECT_DIR$/db_functions.php" afterPath="$PROJECT_DIR$/db_functions.php" />
+      <change beforePath="$PROJECT_DIR$/db_tokens.php" afterPath="$PROJECT_DIR$/db_tokens.php" />
+      <change beforePath="$PROJECT_DIR$/fileUpload.php" afterPath="$PROJECT_DIR$/fileUpload.php" />
+      <change beforePath="$PROJECT_DIR$/get_adv_soft.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/get_all_publications.php" afterPath="$PROJECT_DIR$/get_all_publications.php" />
+      <change beforePath="$PROJECT_DIR$/get_comments.php" afterPath="$PROJECT_DIR$/get_comments.php" />
+      <change beforePath="$PROJECT_DIR$/get_own_info.php" afterPath="$PROJECT_DIR$/get_own_info.php" />
+      <change beforePath="$PROJECT_DIR$/get_publication.php" afterPath="$PROJECT_DIR$/get_publication.php" />
+      <change beforePath="$PROJECT_DIR$/get_publication_images.php" afterPath="$PROJECT_DIR$/get_publication_images.php" />
+      <change beforePath="$PROJECT_DIR$/get_user_add_info.php" afterPath="$PROJECT_DIR$/get_user_add_info.php" />
+      <change beforePath="$PROJECT_DIR$/get_user_avatar_small.php" afterPath="$PROJECT_DIR$/get_user_avatar_small.php" />
+      <change beforePath="$PROJECT_DIR$/get_user_info.php" afterPath="$PROJECT_DIR$/get_user_info.php" />
+      <change beforePath="$PROJECT_DIR$/get_user_publications.php" afterPath="$PROJECT_DIR$/get_user_pubs.php" />
+      <change beforePath="$PROJECT_DIR$/login_check.php" afterPath="$PROJECT_DIR$/login_check.php" />
+      <change beforePath="$PROJECT_DIR$/make_post.php" afterPath="$PROJECT_DIR$/make_post.php" />
+      <change beforePath="$PROJECT_DIR$/post_comment.php" afterPath="$PROJECT_DIR$/post_comment.php" />
+      <change beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
+      <change beforePath="$PROJECT_DIR$/resource.php" afterPath="$PROJECT_DIR$/resource.php" />
+      <change beforePath="$PROJECT_DIR$/server.php" afterPath="$PROJECT_DIR$/server.php" />
+      <change beforePath="$PROJECT_DIR$/show_info.php" afterPath="$PROJECT_DIR$/show_info.php" />
+      <change beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change beforePath="$PROJECT_DIR$/test_time.php" afterPath="$PROJECT_DIR$/test_time.php" />
+      <change beforePath="$PROJECT_DIR$/token.php" afterPath="$PROJECT_DIR$/token.php" />
+      <change beforePath="$PROJECT_DIR$/update_profile.php" afterPath="$PROJECT_DIR$/update_profile.php" />
+      <change beforePath="$PROJECT_DIR$/update_profile_image.php" afterPath="$PROJECT_DIR$/update_profile_image.php" />
     </list>
     <ignored path="chatApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,6 +91,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/oauth2-server-php/composer.json</pharConfigPath>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -36,35 +103,152 @@
     </colors>
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - ChatApp@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ChatApp@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ChatApp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ChatApp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="chatapp: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="chatApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="get_adv_soft.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/get_adv_soft.php">
+    <leaf>
+      <file leaf-file-name="db_functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="303">
+              <caret line="151" column="77" lean-forward="true" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
+              <folding>
+                <marker date="1515851244553" expanded="true" signature="123:1184" ph="SELECT publi... publications" />
+                <marker date="1515851244553" expanded="true" signature="332:558" ph="SELECT publi... publications" />
+                <marker date="1515851244553" expanded="true" signature="773:861" ph="SELECT publi... publications_views" />
+                <marker date="1515851244553" expanded="true" signature="932:996" ph="SELECT pub_i... pubs_likes" />
+                <marker date="1515851244553" expanded="true" signature="1059:1128" ph="SELECT pub_i... pubs_x2_likes" />
+                <marker date="1515851244553" expanded="true" signature="1900:1964" ph="SELECT user_... users" />
+                <marker date="1515851244553" expanded="true" signature="2122:2431" ph="SELECT users... user_info" />
+                <marker date="1515851244553" expanded="true" signature="2538:2595" ph="SELECT usern... users" />
+                <marker date="1515851244553" expanded="true" signature="2710:2769" ph="SELECT name,... user_info" />
+                <marker date="1515851244553" expanded="true" signature="2884:2950" ph="SELECT publi... publications" />
+                <marker date="1515851244553" expanded="true" signature="3275:3369" ph="SELECT COUNT... publications_views" />
+                <marker date="1515851244553" expanded="true" signature="3512:3582" ph="SELECT COUNT... pubs_likes" />
+                <marker date="1515851244553" expanded="true" signature="3725:3798" ph="SELECT COUNT... pubs_x2_likes" />
+                <marker date="1515851244553" expanded="true" signature="4225:4564" ph="SELECT users... user_info" />
+                <marker date="1515851244553" expanded="true" signature="4661:4987" ph="SELECT users... user_info" />
+                <marker date="1515851244553" expanded="true" signature="5859:5916" ph="SELECT datet... publications" />
+                <marker date="1515851244553" expanded="true" signature="6380:6594" ph="SELECT users... users" />
+                <marker date="1515851244553" expanded="true" signature="6380:6637" ph="SELECT users... users" />
+                <marker date="1515851244553" expanded="true" signature="6380:6638" ph="SELECT users... users" />
+                <marker date="1515851244553" expanded="true" signature="6789:6916" ph="INSERT INTO publications_comments... " />
+                <marker date="1515851244553" expanded="true" signature="7014:7243" ph="SELECT users... users" />
+                <marker date="1515851244553" expanded="true" signature="7556:7703" ph="SELECT image... publication_images" />
+                <marker date="1515851244553" expanded="true" signature="7878:7941" ph="INSERT INTO temp_images... " />
+                <marker date="1515851244553" expanded="true" signature="8147:8204" ph="SELECT image... temp_images" />
+                <marker date="1515851244553" expanded="true" signature="8503:8557" ph="INSERT INTO images... " />
+                <marker date="1515851244553" expanded="true" signature="8717:8763" ph="DELETE FROM temp_images... " />
+                <marker date="1515851244553" expanded="true" signature="9302:9450" ph="INSERT INTO publications... " />
+                <marker date="1515851244553" expanded="true" signature="9995:10048" ph="SELECT user_... tokens" />
+                <marker date="1515851244553" expanded="true" signature="10337:10456" ph="SELECT user_... publications" />
+                <marker date="1515851244553" expanded="true" signature="10938:11065" ph="INSERT INTO publication_images... " />
+                <marker date="1515851244553" expanded="true" signature="11281:11398" ph="SELECT img_l... users" />
+                <marker date="1515851244553" expanded="true" signature="11587:11705" ph="SELECT view_... publications_views" />
+                <marker date="1515851244553" expanded="true" signature="11835:11934" ph="INSERT INTO publications_views... " />
+                <marker date="1515851244553" expanded="true" signature="12117:12211" ph="SELECT like_... pubs_likes" />
+                <marker date="1515851244553" expanded="true" signature="12341:12416" ph="INSERT INTO pubs_likes... " />
+                <marker date="1515851244553" expanded="true" signature="12601:12698" ph="SELECT like_... pubs_x2_likes" />
+                <marker date="1515851244553" expanded="true" signature="12828:12906" ph="INSERT INTO pubs_x2_likes... " />
+                <marker date="1515851244553" expanded="true" signature="13125:13245" ph="INSERT INTO pub_soft_adv... " />
+                <marker date="1515851244553" expanded="true" signature="13500:13624" ph="INSERT INTO pub_soft_links... " />
+                <marker date="1515851244553" expanded="true" signature="13872:13922" ph="SELECT * FRO... pub_soft_adv" />
+                <marker date="1515851244553" expanded="true" signature="14396:14499" ph="INSERT INTO users... " />
+                <marker date="1515851244553" expanded="true" signature="14632:14678" ph="INSERT INTO user_info... " />
+                <marker date="1515851244553" expanded="true" signature="14926:15011" ph="UPDATE user_info... " />
+                <marker date="1515851244553" expanded="true" signature="15113:15161" ph="UPDATE user_info... " />
+                <marker date="1515851244553" expanded="true" signature="15269:15325" ph="UPDATE user_info... " />
+                <marker date="1515851244553" expanded="true" signature="15429:15482" ph="UPDATE user_info... " />
+                <marker date="1515851244553" expanded="true" signature="15595:15649" ph="UPDATE users... " />
+                <marker date="1515851244553" expanded="true" signature="15959:16016" ph="UPDATE users... " />
+                <marker date="1515851244553" expanded="true" signature="16199:16249" ph="UPDATE users... " />
+                <marker date="1515851244553" expanded="true" signature="16452:16508" ph="SELECT image... images" />
+                <marker date="1515851244553" expanded="true" signature="16765:16851" ph="UPDATE users... " />
+                <marker date="1515851244553" expanded="true" signature="16955:17005" ph="SELECT 1 FRO... publications" />
+                <marker date="1515851244553" expanded="true" signature="17249:17315" ph="SELECT 1 FRO... pubs_likes" />
+                <marker date="1515851244553" expanded="true" signature="17562:17631" ph="SELECT 1 FRO... pubs_x2_likes" />
+                <marker date="1515851244553" expanded="true" signature="17868:17928" ph="DELETE FROM pubs_likes... " />
+                <marker date="1515851244553" expanded="true" signature="18037:18100" ph="DELETE FROM pubs_x2_likes... " />
+                <marker date="1515851244553" expanded="true" signature="18223:18299" ph="SELECT * FRO... publications" />
+                <marker date="1515851244553" expanded="true" signature="18407:18535" ph="SELECT * FRO... publications" />
+                <marker date="1515851244553" expanded="true" signature="18638:18761" ph="SELECT COUNT... publications_comments" />
+                <marker date="1515851244553" expanded="true" signature="18857:18914" ph="SELECT usern... users" />
+                <marker date="1515851244553" expanded="true" signature="19018:19063" ph="SELECT img_l... images" />
+                <marker date="1515851244553" expanded="true" signature="19164:19279" ph="SELECT COUNT... publications_views" />
+                <marker date="1515851244553" expanded="true" signature="19371:19462" ph="SELECT COUNT... pubs_likes" />
+                <marker date="1515851244553" expanded="true" signature="19556:19652" ph="SELECT COUNT... pubs_x2_likes" />
+                <marker date="1515851244553" expanded="true" signature="19934:19984" ph="INSERT INTO images... " />
+                <marker date="1515851244553" expanded="true" signature="20074:20227" ph="INSERT INTO users... " />
+                <marker date="1515851244553" expanded="true" signature="20360:20459" ph="INSERT INTO user_info... " />
+                <marker date="1515851244553" expanded="true" signature="20887:20937" ph="INSERT INTO images... " />
+                <marker date="1515851244553" expanded="true" signature="21024:21172" ph="INSERT INTO publications... " />
+                <marker date="1515851244553" expanded="true" signature="21858:21910" ph="INSERT INTO images... " />
+                <marker date="1515851244553" expanded="true" signature="22000:22127" ph="INSERT INTO publication_images... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubs_likes" pinned="false" current-in-tab="false">
+        <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.pubs_likes">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubs_x2_likes" pinned="false" current-in-tab="false">
+        <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.pubs_x2_likes">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users" pinned="false" current-in-tab="false">
+        <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="publications" pinned="false" current-in-tab="true">
+        <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.publications">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -82,15 +266,27 @@
     <findStrings>
       <find>post</find>
       <find>postCo</find>
-      <find>token</find>
       <find>ifUser</find>
       <find>INSERT</find>
       <find>insert_</find>
-      <find>getUserI</find>
       <find>getUse</find>
       <find>echo</find>
       <find>getUser</find>
+      <find>views</find>
+      <find>get</find>
+      <find>regis</find>
       <find>make</find>
+      <find>view</find>
+      <find>comm</find>
+      <find>getUserAv</find>
+      <find>star</find>
+      <find>getUserI</find>
+      <find>getI</find>
+      <find>getImageByI</find>
+      <find>usern</find>
+      <find>upda</find>
+      <find>token</find>
+      <find>user_info</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,57 +295,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/uploads/get_adv_soft.php" />
-        <option value="$PROJECT_DIR$/get_user_info.php" />
-        <option value="$PROJECT_DIR$/get_adv_soft.php" />
-        <option value="$PROJECT_DIR$/get_publication.php" />
-        <option value="$PROJECT_DIR$/delete_this" />
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.mpu6050" />
-        <option value="$PROJECT_DIR$/mpu_last_s.php" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.branches" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.images" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.product_stages" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.pub_soft_adv" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.pub_soft_links" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publication_images" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publications" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publications_comments" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publications_stars" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publications_views" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.pubs_books" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.software_licenses" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.software_links" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.temp_images" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.tokens" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.user_info" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users" />
-        <option value="$PROJECT_DIR$/server.php" />
-        <option value="$PROJECT_DIR$/db_oauth.php" />
-        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.oauth_access_tokens" />
-        <option value="$PROJECT_DIR$/oauth2-server-php/src/OAuth2/ResponseType/AccessToken.php" />
-        <option value="$PROJECT_DIR$/test_time.php" />
-        <option value="$PROJECT_DIR$/get_user_add_info.php" />
-        <option value="$PROJECT_DIR$/add_images_to_publication.php" />
-        <option value="$PROJECT_DIR$/check_token.php" />
-        <option value="$PROJECT_DIR$/post_comment.php" />
-        <option value="$PROJECT_DIR$/get_user_publications.php" />
-        <option value="$PROJECT_DIR$/register.php" />
-        <option value="$PROJECT_DIR$/check.php" />
         <option value="$PROJECT_DIR$/uploads/edit_profile.php" />
         <option value="$PROJECT_DIR$/edit_profile.php" />
-        <option value="$PROJECT_DIR$/get_own_info.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/console.sql" />
-        <option value="$PROJECT_DIR$/db_tokens.php" />
-        <option value="$PROJECT_DIR$/update_profile.php" />
         <option value="$PROJECT_DIR$/set_profile_image.php" />
-        <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/update_profile_image.php" />
-        <option value="$PROJECT_DIR$/db_functions.php" />
-        <option value="$PROJECT_DIR$/make_post.php" />
-        <option value="$PROJECT_DIR$/auth.php" />
-        <option value="$PROJECT_DIR$/get_all_publications.php" />
         <option value="$PROJECT_DIR$/add_adv_to_soft.php" />
+        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.pubs_likes" />
+        <option value="$PROJECT_DIR$/check.php" />
+        <option value="$PROJECT_DIR$/uploads/like_pub.php" />
+        <option value="dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publications" />
+        <option value="$PROJECT_DIR$/db_stress.php" />
+        <option value="$PROJECT_DIR$/db_tests.php" />
+        <option value="$PROJECT_DIR$/createPubsForUsers.php" />
+        <option value="$PROJECT_DIR$/createVewsLikesComments.php" />
+        <option value="$PROJECT_DIR$/get_user_publications.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/console.sql" />
+        <option value="$PROJECT_DIR$/db_connect.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9fc7871c-b508-494e-8833-1de5f4e5b7ba/console.sql" />
+        <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/db_tokens.php" />
+        <option value="$PROJECT_DIR$/add_images_to_publication.php" />
+        <option value="$PROJECT_DIR$/auth.php" />
+        <option value="$PROJECT_DIR$/check_token.php" />
+        <option value="$PROJECT_DIR$/createNusers.php" />
+        <option value="$PROJECT_DIR$/fileUpload.php" />
+        <option value="$PROJECT_DIR$/get_all_publications.php" />
+        <option value="$PROJECT_DIR$/get_all_publications_test.php" />
+        <option value="$PROJECT_DIR$/get_all_pubs_boost.php" />
+        <option value="$PROJECT_DIR$/get_own_info.php" />
+        <option value="$PROJECT_DIR$/get_publication.php" />
+        <option value="$PROJECT_DIR$/get_publication_images.php" />
+        <option value="$PROJECT_DIR$/get_user_add_info.php" />
+        <option value="$PROJECT_DIR$/get_user_avatar_small.php" />
+        <option value="$PROJECT_DIR$/get_user_info.php" />
+        <option value="$PROJECT_DIR$/get_user_pubs.php" />
+        <option value="$PROJECT_DIR$/like_pub.php" />
+        <option value="$PROJECT_DIR$/login_check.php" />
+        <option value="$PROJECT_DIR$/make_post.php" />
+        <option value="$PROJECT_DIR$/post_comment.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/resource.php" />
+        <option value="$PROJECT_DIR$/server.php" />
+        <option value="$PROJECT_DIR$/show_info.php" />
+        <option value="$PROJECT_DIR$/stress_test.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/test_time.php" />
+        <option value="$PROJECT_DIR$/token.php" />
+        <option value="$PROJECT_DIR$/update_profile.php" />
+        <option value="$PROJECT_DIR$/update_profile_image.php" />
+        <option value="$PROJECT_DIR$/db_get_pubs.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/console.sql" />
+        <option value="$PROJECT_DIR$/get_comments.php" />
+        <option value="$PROJECT_DIR$/db_functions.php" />
       </list>
     </option>
   </component>
@@ -163,7 +359,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -185,35 +381,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chatApp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="chatApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chatApp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="chatApp">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +407,8 @@
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="" />
-    <property name="FullScreen" value="true" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.standard" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -237,7 +418,30 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -265,15 +469,6 @@
       <PhpTestRunnerSettings />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -294,6 +489,26 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+  </component>
+  <component name="RuntimeDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -364,12 +579,49 @@
       <workItem from="1485096306865" duration="1355000" />
       <workItem from="1485182849129" duration="279000" />
       <workItem from="1485278960355" duration="3386000" />
-      <workItem from="1485342488500" duration="328000" />
+      <workItem from="1485342488500" duration="16349000" />
+      <workItem from="1485758428160" duration="3300000" />
+      <workItem from="1485762081187" duration="19123000" />
+      <workItem from="1485844967356" duration="15020000" />
+      <workItem from="1485929883092" duration="773000" />
+      <workItem from="1486102973383" duration="5899000" />
+      <workItem from="1486120261092" duration="26490000" />
+      <workItem from="1486397992347" duration="1039000" />
+      <workItem from="1486553610468" duration="3762000" />
+      <workItem from="1486739179624" duration="951000" />
+      <workItem from="1486811244634" duration="2790000" />
+      <workItem from="1487318500533" duration="9000" />
+      <workItem from="1487505174255" duration="861000" />
+      <workItem from="1487507455252" duration="13000" />
+      <workItem from="1487584712191" duration="964000" />
+      <workItem from="1487743819293" duration="2060000" />
+      <workItem from="1487762583723" duration="1000" />
+      <workItem from="1488191238176" duration="130000" />
+      <workItem from="1488191683793" duration="56000" />
+      <workItem from="1488822762776" duration="833000" />
+      <workItem from="1488874119068" duration="304000" />
+      <workItem from="1492718168502" duration="30000" />
+      <workItem from="1493911418040" duration="544000" />
+      <workItem from="1494066280892" duration="4000" />
+      <workItem from="1495200450520" duration="3657000" />
+      <workItem from="1495357450573" duration="1496000" />
+      <workItem from="1495544711563" duration="533000" />
+      <workItem from="1495645339155" duration="1747000" />
+      <workItem from="1500361894486" duration="410000" />
+      <workItem from="1500442730900" duration="4000" />
+      <workItem from="1503481535655" duration="12000" />
+      <workItem from="1507380649128" duration="584000" />
+      <workItem from="1507386920052" duration="8000" />
+      <workItem from="1507467544719" duration="12000" />
+      <workItem from="1515063808142" duration="1439000" />
+      <workItem from="1515404923063" duration="5000" />
+      <workItem from="1515770499820" duration="3589000" />
+      <workItem from="1515839269760" duration="5183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181690000" />
+    <option name="totallyTimeSpent" value="301346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -382,30 +634,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20028612" sideWeight="0.48134327" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24279836" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29903978" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17453505" sideWeight="0.48010975" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50240964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33607522" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784638" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45090908" sideWeight="0.49427754" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0014306152" sideWeight="0.48134327" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22889842" sideWeight="0.48010975" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35301206" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18097281" sideWeight="0.51865673" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Runtime Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20361446" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -425,543 +680,69 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.tokens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.tokens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.tokens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.tokens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.tokens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login_check.php">
+    <entry file="file://$PROJECT_DIR$/createPubsForUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="36" />
+        <state relative-caret-position="270">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_time.php">
+    <entry file="file://$PROJECT_DIR$/createVewsLikesComments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#261#299#0#PHP" expanded="false" />
+            <element signature="e#1308#1364#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_user_add_info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publications_comments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_user_info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_user_publications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/2GAZXhHKlwGhtaRQWdxJl6AY3PofWmqI2SQp9wqFERTXmQ0LvaB8ocnTDUKtVjS.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post_comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_publication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.user_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_own_info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/set_profile_image.php" />
     <entry file="file://$PROJECT_DIR$/db_tokens.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="146" column="56" lean-forward="false" selection-start-line="146" selection-start-column="56" selection-end-line="146" selection-end-column="56" />
-          <folding>
-            <element signature="n#__construct#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#__destruct#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#setDefaultExpiration#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#generateToken#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifTokenExists#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifTokenExpired#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifTokenNotExpired#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#extendToken#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#addToken#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#expireToken#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifUserExists#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifUserExistsById#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifEmailExists#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifUserNotExists#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#authentificate#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifPassword#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifPasswordById#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#ifNotPassword#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#reverse#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#getUserIdByToken#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#getUserIdByUsername#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <element signature="n#getUserIdByEmail#0;n#DB_Tokens#0;n#!!top" expanded="false" />
-            <marker date="1484748836000" expanded="true" signature="899:944" ph="SELECT 1 FRO... tokens" />
-            <marker date="1484748836000" expanded="true" signature="1338:1389" ph="SELECT expir... tokens" />
-            <marker date="1484748836000" expanded="true" signature="2115:2171" ph="UPDATE token... " />
-            <marker date="1484748836000" expanded="true" signature="2312:2413" ph="UPDATE token... " />
-            <marker date="1484748836000" expanded="true" signature="2573:2629" ph="UPDATE token... " />
-            <marker date="1484748836000" expanded="true" signature="2715:2763" ph="SELECT 1 FRO... users" />
-            <marker date="1484748836000" expanded="true" signature="2981:3016" ph="SELECT 1 FRO... users" />
-            <marker date="1484748836000" expanded="true" signature="2981:3017" ph="SELECT 1 FRO... users" />
-            <marker date="1484748836000" expanded="true" signature="3239:3281" ph="SELECT 1 FRO... users" />
-            <marker date="1484748836000" expanded="true" signature="3737:3791" ph="SELECT user_... users" />
-            <marker date="1484748836000" expanded="true" signature="4089:4143" ph="SELECT passw... users" />
-            <marker date="1484748836000" expanded="true" signature="4462:4504" ph="SELECT passw... users" />
-            <marker date="1484748836000" expanded="true" signature="4462:4505" ph="SELECT passw... users" />
-            <marker date="1484748836000" expanded="true" signature="4462:4506" ph="SELECT passw... users" />
-            <marker date="1484748836000" expanded="true" signature="5101:5143" ph="SELECT user_... tokens" />
-            <marker date="1484748836000" expanded="true" signature="5101:5144" ph="SELECT user_... tokens" />
-            <marker date="1484748836000" expanded="true" signature="5101:5150" ph="SELECT user_... tokens" />
-            <marker date="1484748836000" expanded="true" signature="5438:5492" ph="SELECT user_... users" />
-            <marker date="1484748836000" expanded="true" signature="5772:5820" ph="SELECT user_... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/update_profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="18" />
-          <folding>
-            <element signature="e#275#297#0#PHP" expanded="false" />
-            <element signature="e#694#732#0#PHP" expanded="false" />
-            <element signature="e#2141#2234#0#PHP" expanded="false" />
-            <element signature="e#2240#2345#0#PHP" expanded="false" />
-            <element signature="e#2351#2448#0#PHP" expanded="false" />
-            <element signature="e#2454#2771#0#PHP" expanded="false" />
-            <element signature="e#3112#3565#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.tokens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/update_profile_image.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="96" lean-forward="false" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.images">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publications">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.publications_stars">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_adv_to_soft.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/make_post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_all_publications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db_functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="170" column="87" lean-forward="false" selection-start-line="170" selection-start-column="87" selection-end-line="170" selection-end-column="87" />
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
-            <element signature="n#getSoftAdv#0;n#DB_Functions#0;n#!!top" expanded="false" />
-            <marker date="1485282700000" expanded="true" signature="105:1052" ph="SELECT publi... publications" />
-            <marker date="1485282700000" expanded="true" signature="302:528" ph="SELECT publi... publications" />
-            <marker date="1485282700000" expanded="true" signature="743:831" ph="SELECT publi... publications_views" />
-            <marker date="1485282700000" expanded="true" signature="902:990" ph="SELECT publi... publications_stars" />
-            <marker date="1485282700000" expanded="true" signature="1742:1806" ph="SELECT user_... users" />
-            <marker date="1485282700000" expanded="true" signature="1952:2261" ph="SELECT users... user_info" />
-            <marker date="1485282700000" expanded="true" signature="2377:2716" ph="SELECT users... user_info" />
-            <marker date="1485282700000" expanded="true" signature="2801:3127" ph="SELECT users... user_info" />
-            <marker date="1485282700000" expanded="true" signature="3939:3995" ph="SELECT datet... publications" />
-            <marker date="1485282700000" expanded="true" signature="3939:3996" ph="SELECT datet... publications" />
-            <marker date="1485282700000" expanded="true" signature="3939:4003" ph="SELECT datet... publications" />
-            <marker date="1485282700000" expanded="true" signature="4435:4648" ph="SELECT users... users" />
-            <marker date="1485282700000" expanded="true" signature="4804:4931" ph="INSERT INTO publications_comments... " />
-            <marker date="1485282700000" expanded="true" signature="5006:5235" ph="SELECT users... users" />
-            <marker date="1485282700000" expanded="true" signature="5538:5685" ph="SELECT image... publication_images" />
-            <marker date="1485282700000" expanded="true" signature="5848:5911" ph="INSERT INTO temp_images... " />
-            <marker date="1485282700000" expanded="true" signature="6094:6151" ph="SELECT image... temp_images" />
-            <marker date="1485282700000" expanded="true" signature="6438:6492" ph="INSERT INTO images... " />
-            <marker date="1485282700000" expanded="true" signature="6629:6675" ph="DELETE FROM " />
-            <marker date="1485282700000" expanded="true" signature="7211:7359" ph="INSERT INTO publications... " />
-            <marker date="1485282700000" expanded="true" signature="7704:7757" ph="SELECT user_... tokens" />
-            <marker date="1485282700000" expanded="true" signature="8033:8152" ph="SELECT user_... publications" />
-            <marker date="1485282700000" expanded="true" signature="8621:8748" ph="INSERT INTO publication_images... " />
-            <marker date="1485282700000" expanded="true" signature="8952:9069" ph="SELECT img_l... users" />
-            <marker date="1485282700000" expanded="true" signature="9246:9364" ph="SELECT view_... publications_views" />
-            <marker date="1485282700000" expanded="true" signature="9481:9580" ph="INSERT INTO publications_views... " />
-            <marker date="1485282700000" expanded="true" signature="9759:9877" ph="SELECT star_... publications_stars" />
-            <marker date="1485282700000" expanded="true" signature="9994:10093" ph="INSERT INTO publications_stars... " />
-            <marker date="1485282700000" expanded="true" signature="10300:10420" ph="INSERT INTO pub_soft_adv... " />
-            <marker date="1485282700000" expanded="true" signature="10663:10787" ph="INSERT INTO pub_soft_links... " />
-            <marker date="1485282700000" expanded="true" signature="11023:11073" ph="SELECT * FRO... pub_soft_adv" />
-            <marker date="1485282700000" expanded="true" signature="11534:11637" ph="INSERT INTO pub_soft_adv... " />
-            <marker date="1485282700000" expanded="true" signature="11747:11793" ph="INSERT INTO user_info... " />
-            <marker date="1485282700000" expanded="true" signature="12029:12114" ph="UPDATE user_... " />
-            <marker date="1485282700000" expanded="true" signature="12204:12252" ph="UPDATE user_... " />
-            <marker date="1485282700000" expanded="true" signature="12348:12404" ph="UPDATE user_... " />
-            <marker date="1485282700000" expanded="true" signature="12496:12549" ph="UPDATE user_... " />
-            <marker date="1485282700000" expanded="true" signature="12650:12703" ph="UPDATE users... " />
-            <marker date="1485282700000" expanded="true" signature="12650:12704" ph="UPDATE users... " />
-            <marker date="1485282700000" expanded="true" signature="13002:13058" ph="UPDATE users... " />
-            <marker date="1485282700000" expanded="true" signature="13002:13059" ph="UPDATE users... " />
-            <marker date="1485282700000" expanded="true" signature="13230:13280" ph="UPDATE users... " />
-            <marker date="1485282700000" expanded="true" signature="13471:13516" ph="SELECT image... images" />
-            <marker date="1485282700000" expanded="true" signature="13471:13527" ph="SELECT image... images" />
-            <marker date="1485282700000" expanded="true" signature="13771:13829" ph="UPDATE users... " />
+            <marker date="1515841556952" expanded="true" signature="943:988" ph="SELECT 1 FRO... tokens" />
+            <marker date="1515841556952" expanded="true" signature="1395:1446" ph="SELECT expir... tokens" />
+            <marker date="1515841556952" expanded="true" signature="2185:2241" ph="UPDATE tokens... " />
+            <marker date="1515841556952" expanded="true" signature="2388:2494" ph="INSERT INTO tokens... " />
+            <marker date="1515841556952" expanded="true" signature="2667:2723" ph="UPDATE tokens... " />
+            <marker date="1515841556952" expanded="true" signature="2821:2869" ph="SELECT 1 FRO... users" />
+            <marker date="1515841556952" expanded="true" signature="3100:3136" ph="SELECT 1 FRO... users" />
+            <marker date="1515841556952" expanded="true" signature="3371:3413" ph="SELECT 1 FRO... users" />
+            <marker date="1515841556952" expanded="true" signature="3882:3936" ph="SELECT user_... users" />
+            <marker date="1515841556952" expanded="true" signature="4247:4301" ph="SELECT passw... users" />
+            <marker date="1515841556952" expanded="true" signature="4633:4676" ph="SELECT passw... users" />
+            <marker date="1515841556952" expanded="true" signature="5285:5334" ph="SELECT user_... tokens" />
+            <marker date="1515841556952" expanded="true" signature="5635:5689" ph="SELECT user_... users" />
+            <marker date="1515841556952" expanded="true" signature="5982:6030" ph="SELECT user_... users" />
+            <marker date="1515841556952" expanded="true" signature="6252:6299" ph="SELECT avata... users" />
+            <marker date="1515841556952" expanded="true" signature="6441:6486" ph="SELECT img_l... images" />
+            <marker date="1515841556952" expanded="true" signature="6671:6711" ph="SELECT email... users" />
+            <marker date="1515841556952" expanded="true" signature="6890:6949" ph="SELECT name,... user_info" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/add_images_to_publication.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/authorize.php">
+    <entry file="file://$PROJECT_DIR$/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -969,48 +750,445 @@
     <entry file="file://$PROJECT_DIR$/check.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/check_token.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#43#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createNusers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db_connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fileUpload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_adv_soft.php">
+    <entry file="file://$PROJECT_DIR$/get_all_publications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_all_publications_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_own_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_publication_images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_user_add_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_user_avatar_small.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_user_pubs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/like_pub.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post_comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_info.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stress_test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/token.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update_profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update_profile_image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/9fc7871c-b508-494e-8833-1de5f4e5b7ba/chatapp.images">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_user_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/a5dbcfe1-0b7e-4276-9b40-9b0deb86c634/ChatApp.user_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9fc7871c-b508-494e-8833-1de5f4e5b7ba/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/9fc7871c-b508-494e-8833-1de5f4e5b7ba/chatapp.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.images">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_publication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.publications_comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="88" lean-forward="false" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_all_pubs_boost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_get_pubs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+          <folding>
+            <marker date="1515850052934" expanded="true" signature="2103:2161" ph="SELECT user_... tokens" />
+            <marker date="1515850052934" expanded="true" signature="2649:2725" ph="SELECT * FRO... publications" />
+            <marker date="1515850052934" expanded="true" signature="2824:2944" ph="SELECT * FRO... publications" />
+            <marker date="1515850052934" expanded="true" signature="3043:3140" ph="SELECT * FRO... publications" />
+            <marker date="1515850052934" expanded="true" signature="3255:3394" ph="SELECT * FRO... publications" />
+            <marker date="1515850052934" expanded="true" signature="3489:3600" ph="SELECT COUNT... publications_comments" />
+            <marker date="1515850052934" expanded="true" signature="3696:3753" ph="SELECT usern... users" />
+            <marker date="1515850052934" expanded="true" signature="3857:3902" ph="SELECT img_l... images" />
+            <marker date="1515850052934" expanded="true" signature="4003:4109" ph="SELECT COUNT... publications_views" />
+            <marker date="1515850052934" expanded="true" signature="4201:4283" ph="SELECT COUNT... pubs_likes" />
+            <marker date="1515850052934" expanded="true" signature="4377:4462" ph="SELECT COUNT... pubs_x2_likes" />
+            <marker date="1515850052934" expanded="true" signature="4568:4634" ph="SELECT 1 FRO... pubs_likes" />
+            <marker date="1515850052934" expanded="true" signature="4881:4950" ph="SELECT 1 FRO... pubs_x2_likes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.user_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="151" column="77" lean-forward="true" selection-start-line="151" selection-start-column="77" selection-end-line="151" selection-end-column="77" />
+          <folding>
+            <marker date="1515851244553" expanded="true" signature="123:1184" ph="SELECT publi... publications" />
+            <marker date="1515851244553" expanded="true" signature="332:558" ph="SELECT publi... publications" />
+            <marker date="1515851244553" expanded="true" signature="773:861" ph="SELECT publi... publications_views" />
+            <marker date="1515851244553" expanded="true" signature="932:996" ph="SELECT pub_i... pubs_likes" />
+            <marker date="1515851244553" expanded="true" signature="1059:1128" ph="SELECT pub_i... pubs_x2_likes" />
+            <marker date="1515851244553" expanded="true" signature="1900:1964" ph="SELECT user_... users" />
+            <marker date="1515851244553" expanded="true" signature="2122:2431" ph="SELECT users... user_info" />
+            <marker date="1515851244553" expanded="true" signature="2538:2595" ph="SELECT usern... users" />
+            <marker date="1515851244553" expanded="true" signature="2710:2769" ph="SELECT name,... user_info" />
+            <marker date="1515851244553" expanded="true" signature="2884:2950" ph="SELECT publi... publications" />
+            <marker date="1515851244553" expanded="true" signature="3275:3369" ph="SELECT COUNT... publications_views" />
+            <marker date="1515851244553" expanded="true" signature="3512:3582" ph="SELECT COUNT... pubs_likes" />
+            <marker date="1515851244553" expanded="true" signature="3725:3798" ph="SELECT COUNT... pubs_x2_likes" />
+            <marker date="1515851244553" expanded="true" signature="4225:4564" ph="SELECT users... user_info" />
+            <marker date="1515851244553" expanded="true" signature="4661:4987" ph="SELECT users... user_info" />
+            <marker date="1515851244553" expanded="true" signature="5859:5916" ph="SELECT datet... publications" />
+            <marker date="1515851244553" expanded="true" signature="6380:6594" ph="SELECT users... users" />
+            <marker date="1515851244553" expanded="true" signature="6380:6637" ph="SELECT users... users" />
+            <marker date="1515851244553" expanded="true" signature="6380:6638" ph="SELECT users... users" />
+            <marker date="1515851244553" expanded="true" signature="6789:6916" ph="INSERT INTO publications_comments... " />
+            <marker date="1515851244553" expanded="true" signature="7014:7243" ph="SELECT users... users" />
+            <marker date="1515851244553" expanded="true" signature="7556:7703" ph="SELECT image... publication_images" />
+            <marker date="1515851244553" expanded="true" signature="7878:7941" ph="INSERT INTO temp_images... " />
+            <marker date="1515851244553" expanded="true" signature="8147:8204" ph="SELECT image... temp_images" />
+            <marker date="1515851244553" expanded="true" signature="8503:8557" ph="INSERT INTO images... " />
+            <marker date="1515851244553" expanded="true" signature="8717:8763" ph="DELETE FROM temp_images... " />
+            <marker date="1515851244553" expanded="true" signature="9302:9450" ph="INSERT INTO publications... " />
+            <marker date="1515851244553" expanded="true" signature="9995:10048" ph="SELECT user_... tokens" />
+            <marker date="1515851244553" expanded="true" signature="10337:10456" ph="SELECT user_... publications" />
+            <marker date="1515851244553" expanded="true" signature="10938:11065" ph="INSERT INTO publication_images... " />
+            <marker date="1515851244553" expanded="true" signature="11281:11398" ph="SELECT img_l... users" />
+            <marker date="1515851244553" expanded="true" signature="11587:11705" ph="SELECT view_... publications_views" />
+            <marker date="1515851244553" expanded="true" signature="11835:11934" ph="INSERT INTO publications_views... " />
+            <marker date="1515851244553" expanded="true" signature="12117:12211" ph="SELECT like_... pubs_likes" />
+            <marker date="1515851244553" expanded="true" signature="12341:12416" ph="INSERT INTO pubs_likes... " />
+            <marker date="1515851244553" expanded="true" signature="12601:12698" ph="SELECT like_... pubs_x2_likes" />
+            <marker date="1515851244553" expanded="true" signature="12828:12906" ph="INSERT INTO pubs_x2_likes... " />
+            <marker date="1515851244553" expanded="true" signature="13125:13245" ph="INSERT INTO pub_soft_adv... " />
+            <marker date="1515851244553" expanded="true" signature="13500:13624" ph="INSERT INTO pub_soft_links... " />
+            <marker date="1515851244553" expanded="true" signature="13872:13922" ph="SELECT * FRO... pub_soft_adv" />
+            <marker date="1515851244553" expanded="true" signature="14396:14499" ph="INSERT INTO users... " />
+            <marker date="1515851244553" expanded="true" signature="14632:14678" ph="INSERT INTO user_info... " />
+            <marker date="1515851244553" expanded="true" signature="14926:15011" ph="UPDATE user_info... " />
+            <marker date="1515851244553" expanded="true" signature="15113:15161" ph="UPDATE user_info... " />
+            <marker date="1515851244553" expanded="true" signature="15269:15325" ph="UPDATE user_info... " />
+            <marker date="1515851244553" expanded="true" signature="15429:15482" ph="UPDATE user_info... " />
+            <marker date="1515851244553" expanded="true" signature="15595:15649" ph="UPDATE users... " />
+            <marker date="1515851244553" expanded="true" signature="15959:16016" ph="UPDATE users... " />
+            <marker date="1515851244553" expanded="true" signature="16199:16249" ph="UPDATE users... " />
+            <marker date="1515851244553" expanded="true" signature="16452:16508" ph="SELECT image... images" />
+            <marker date="1515851244553" expanded="true" signature="16765:16851" ph="UPDATE users... " />
+            <marker date="1515851244553" expanded="true" signature="16955:17005" ph="SELECT 1 FRO... publications" />
+            <marker date="1515851244553" expanded="true" signature="17249:17315" ph="SELECT 1 FRO... pubs_likes" />
+            <marker date="1515851244553" expanded="true" signature="17562:17631" ph="SELECT 1 FRO... pubs_x2_likes" />
+            <marker date="1515851244553" expanded="true" signature="17868:17928" ph="DELETE FROM pubs_likes... " />
+            <marker date="1515851244553" expanded="true" signature="18037:18100" ph="DELETE FROM pubs_x2_likes... " />
+            <marker date="1515851244553" expanded="true" signature="18223:18299" ph="SELECT * FRO... publications" />
+            <marker date="1515851244553" expanded="true" signature="18407:18535" ph="SELECT * FRO... publications" />
+            <marker date="1515851244553" expanded="true" signature="18638:18761" ph="SELECT COUNT... publications_comments" />
+            <marker date="1515851244553" expanded="true" signature="18857:18914" ph="SELECT usern... users" />
+            <marker date="1515851244553" expanded="true" signature="19018:19063" ph="SELECT img_l... images" />
+            <marker date="1515851244553" expanded="true" signature="19164:19279" ph="SELECT COUNT... publications_views" />
+            <marker date="1515851244553" expanded="true" signature="19371:19462" ph="SELECT COUNT... pubs_likes" />
+            <marker date="1515851244553" expanded="true" signature="19556:19652" ph="SELECT COUNT... pubs_x2_likes" />
+            <marker date="1515851244553" expanded="true" signature="19934:19984" ph="INSERT INTO images... " />
+            <marker date="1515851244553" expanded="true" signature="20074:20227" ph="INSERT INTO users... " />
+            <marker date="1515851244553" expanded="true" signature="20360:20459" ph="INSERT INTO user_info... " />
+            <marker date="1515851244553" expanded="true" signature="20887:20937" ph="INSERT INTO images... " />
+            <marker date="1515851244553" expanded="true" signature="21024:21172" ph="INSERT INTO publications... " />
+            <marker date="1515851244553" expanded="true" signature="21858:21910" ph="INSERT INTO images... " />
+            <marker date="1515851244553" expanded="true" signature="22000:22127" ph="INSERT INTO publication_images... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.pubs_likes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.pubs_x2_likes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ad894b7/7e7d12e1-0a11-4240-b859-9b2cf964b6d2/chatapp.publications">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

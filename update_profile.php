@@ -1,6 +1,7 @@
 <?php
 include_once 'db_functions.php';
 include_once 'db_tokens.php';
+error_reporting(E_ERROR);
 $json = file_get_contents('php://input');
 $obj = json_decode($json, true);
 

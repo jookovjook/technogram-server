@@ -1,7 +1,10 @@
 <?php
-$dsn      = 'mysql:dbname=ChatApp;host=localhost';
+$dsn      = 'mysql:dbname=chatapp;host=localhost';
 $username = 'jook';
 $password = '47530213';
+
+error_reporting(E_ERROR);
+
 date_default_timezone_set('Europe/Moscow');
 
 // error reporting (this is a demo, after all!)

@@ -6,5 +6,5 @@ echo $_SERVER['HTTP_USER_AGENT'] . "\n\n";
 //foreach($_SERVER as $key => $value){
 //    echo '$_SERVER["'.$key.'"] = '.$value."<br />";
 //}
-?>
 
+error_reporting(E_ERROR);

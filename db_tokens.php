@@ -5,12 +5,16 @@
 
 class DB_Tokens
 {
+
+	private $con;
+
     // constructor
     function __construct(){
         include_once './db_connect.php';
         // connecting to database
         $this->db = new DB_Connect();
-        $this->db->connect();
+        $this->con = $this->db->connect();
+
     }
 
     // destructor
@@ -35,8 +39,8 @@ class DB_Tokens
     }
 
     public function ifTokenExists($token){
-        $result =mysql_query("SELECT 1 FROM tokens WHERE `token` = '$token'");
-        if ($result && mysql_num_rows($result) > 0){
+        $result = mysqli_query($this->con,"SELECT 1 FROM tokens WHERE `token` = '$token'");
+        if ($result && mysqli_num_rows($result) > 0){
             return true;
         }else{
             return false;
@@ -48,8 +52,8 @@ class DB_Tokens
             date_default_timezone_set('Europe/Moscow');
             $date = new DateTime();
             $now = $date->getTimestamp();
-            $result =mysql_query("SELECT expires FROM tokens WHERE `token` = '$token'");
-            $row = mysql_fetch_array($result);
+            $result =mysqli_query($this->con,"SELECT expires FROM tokens WHERE `token` = '$token'");
+            $row = mysqli_fetch_array($result);
             if($row != false){
                 $expires = $row['expires'];
                 if($expires <= $now){
@@ -74,13 +78,13 @@ class DB_Tokens
         $date = new DateTime();
         $now = $date->getTimestamp();
         $time = $now + $sec;
-        mysql_query("UPDATE tokens SET expires = $time WHERE token = '$token'");
+        mysqli_query($this->con,"UPDATE tokens SET expires = $time WHERE token = '$token'");
     }
 
     public function addToken($user_id){
         $token = $this->generateToken();
         $expires = 0;
-        mysql_query("INSERT INTO tokens (user_id, token, expires)
+        mysqli_query($this->con,"INSERT INTO tokens (user_id, token, expires)
                     VALUES ('$user_id', '$token', '$expires') ");
         $this->setDefaultExpiration($token);
         return $token;
@@ -88,12 +92,12 @@ class DB_Tokens
 
     public function expireToken($token){
         $time = 0;
-        mysql_query("UPDATE tokens SET expires = $time WHERE token = '$token'");
+        mysqli_query($this->con,"UPDATE tokens SET expires = $time WHERE token = '$token'");
     }
 
     public function ifUserExists($username){
-        $result =mysql_query("SELECT 1 FROM users WHERE username = '$username'");
-        if ($result && mysql_num_rows($result) > 0){
+        $result =mysqli_query($this->con,"SELECT 1 FROM users WHERE username = '$username'");
+        if ($result && mysqli_num_rows($result) > 0){
             return true;
         }else{
             return false;
@@ -101,8 +105,8 @@ class DB_Tokens
     }
 
     public function ifUserExistsById($user_id){
-        $result =mysql_query("SELECT 1 FROM users WHERE user_id = ".$user_id);
-        if ($result && mysql_num_rows($result) > 0){
+        $result =mysqli_query($this->con,"SELECT 1 FROM users WHERE user_id = ".$user_id);
+        if ($result && mysqli_num_rows($result) > 0){
             return true;
         }else{
             return false;
@@ -110,8 +114,8 @@ class DB_Tokens
     }
 
     public function ifEmailExists($email){
-        $result =mysql_query("SELECT 1 FROM users WHERE email = '$email'");
-        if ($result && mysql_num_rows($result) > 0){
+        $result =mysqli_query($this->con,"SELECT 1 FROM users WHERE email = '$email'");
+        if ($result && mysqli_num_rows($result) > 0){
             return true;
         }else{
             return false;
@@ -125,8 +129,8 @@ class DB_Tokens
     public function authentificate($username, $password){
         if($this->ifUserExists($username)){
             if($this->ifPassword($username, $password)){
-                $result = mysql_query("SELECT user_id FROM users WHERE username = '$username'");
-                $row = mysql_fetch_array($result);
+                $result = mysqli_query($this->con,"SELECT user_id FROM users WHERE username = '$username'");
+                $row = mysqli_fetch_array($result);
                 return $this->addToken($row['user_id']);
             }
         }
@@ -135,8 +139,8 @@ class DB_Tokens
 
     public function ifPassword($username, $password){
         if($this->ifUserExists($username)){
-            $result = mysql_query("SELECT password FROM users WHERE username ='$username'");
-            $row = mysql_fetch_array($result);
+            $result = mysqli_query($this->con,"SELECT password FROM users WHERE username ='$username'");
+            $row = mysqli_fetch_array($result);
             if($row['password'] == $password){
                 return true;
             }
@@ -146,8 +150,8 @@ class DB_Tokens
 
     public function ifPasswordById($user_id, $password){
         if($this->ifUserExistsById($user_id)){
-            $result = mysql_query("SELECT password FROM users WHERE user_id = $user_id");
-            $row = mysql_fetch_array($result);
+            $result = mysqli_query($this->con,"SELECT password FROM users WHERE user_id = $user_id");
+            $row = mysqli_fetch_array($result);
             if($row['password'] == $password){
                 return true;
             }
@@ -169,8 +173,8 @@ class DB_Tokens
     public function getUserIdByToken($token){
         $user_id = -1;
         if($this->ifTokenNotExpired($token)) {
-            $result = mysql_query("SELECT user_id FROM tokens WHERE token = '$token'");
-            $row = mysql_fetch_array($result);
+            $result = mysqli_query($this->con,"SELECT user_id FROM tokens WHERE token = '$token'");
+            $row = mysqli_fetch_array($result);
             $user_id = $row['user_id'];
         }
         return $user_id;
@@ -179,8 +183,8 @@ class DB_Tokens
     public function getUserIdByUsername($username){
         $user_id = -1;
         if($this->ifUserExists($username)) {
-            $result = mysql_query("SELECT user_id FROM users WHERE username = '$username'");
-            $row = mysql_fetch_array($result);
+            $result = mysqli_query($this->con,"SELECT user_id FROM users WHERE username = '$username'");
+            $row = mysqli_fetch_array($result);
             $user_id = $row['user_id'];
         }
         return $user_id;
@@ -189,13 +193,31 @@ class DB_Tokens
     public function getUserIdByEmail($email){
         $user_id = -1;
         if($this->ifEmailExists($email)) {
-            $result = mysql_query("SELECT user_id FROM users WHERE email = '$email'");
-            $row = mysql_fetch_array($result);
+            $result = mysqli_query($this->con,"SELECT user_id FROM users WHERE email = '$email'");
+            $row = mysqli_fetch_array($result);
             $user_id = $row['user_id'];
         }
         return $user_id;
     }
 
-}
+    public function getUserAvatar($user_id){
+        $result = mysqli_query($this->con,"SELECT avatar_large FROM users WHERE user_id = $user_id");
+        $row = mysqli_fetch_array($result);
+        $avatar_id = $row['avatar_large'];
+        $result = mysqli_query($this->con,"SELECT img_link FROM images WHERE image_id = $avatar_id");
+        $row = mysqli_fetch_array($result);
+        return $row['img_link'];
+    }
 
-?>
+    public function getUserEmail($user_id){
+        $result = mysqli_query($this->con,"SELECT email FROM users WHERE user_id = $user_id");
+        $row = mysqli_fetch_array($result);
+        return $row['email'];
+    }
+
+    public function getUserInfo($user_id){
+        $result = mysqli_query($this->con,"SELECT name, surname, about FROM user_info WHERE user_id = $user_id");
+        return mysqli_fetch_array($result);
+    }
+
+}
